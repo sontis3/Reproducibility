@@ -3,25 +3,25 @@ function Import-Normal-Ranges () {
   [CmdletBinding()]
   Param(
       [Parameter(Mandatory = $True)] [string]$Path,   # путь к файлу с данными
-      [Parameter(Mandatory = $True)] [string]$Name,   # имя страницы
-      [Parameter(Mandatory = $True)] [string]$code
+      [Parameter(Mandatory = $True)] [string]$Name    # имя страницы
   )
   $excel = New-Object OfficeOpenXml.ExcelPackage -ArgumentList $Path
   $wBook = $excel.Workbook
   $wSheets = $wBook.Worksheets
   $sheet = $wSheets[$Name]
 
-  $tableData = [PSCustomObject]@{
-      sample   = @(); # данные нарезанные по рандомизационному номеру
-      colSlice = @(); # данные нарезанные по временным меткам
-      stats    = 0;
-      code     = $code; # код препарата
-  }
+  $tableData = @()
 
   for ($i = 1; $i -le $sheet.Dimension.Rows; $i++) {
     # $qwe = $sheet.Cells[$i, 2].Value
-    if ($sheet.Cells[$i, 2].Value) {
-      
+    if ($sheet.Cells[$i, 3].Value -and $sheet.Cells[$i, 3].Value.GetType().Name -eq "Double" ) {
+      $item = [PSCustomObject]@{
+        type = $sheet.Cells[$i, 1].Value;
+        name = $sheet.Cells[$i, 2].Value;
+        lowConc = $sheet.Cells[$i, 3].Value;
+        highConc = $sheet.Cells[$i, 4].Value;
+      }
+      $tableData += $item
     }
   }
   # foreach ($range in $wBook.Names) {

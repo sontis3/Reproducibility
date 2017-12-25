@@ -30,5 +30,11 @@ $EpPlusPath = Split-Path -Parent $scriptPath | Join-Path -ChildPath "packages\EP
 
 . .\excel-helpers.ps1
 
-$qwe = Import-Normal-Ranges -Path $normPath -Name "Blood Serum" -code "123"
+$BioFluidNames = @("Blood Serum", "Лист2")
 
+$ranges = @{}
+
+$BioFluidNames.ForEach({
+    $item = Import-Normal-Ranges -Path $normPath -Name $_
+    $ranges.Add($_, $item)
+})
