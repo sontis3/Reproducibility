@@ -37,7 +37,7 @@ function Get-XmlData () {
         $sampleItem = $si.psobject.Copy()
         foreach ($f in $fields) {
             $srcField = $item
-            $srcField = $srcField.SelectSingleNode($_, $nsm)
+            $srcField = $srcField.SelectSingleNode($f, $nsm)
             $sampleItem.$f = $srcField.InnerText
         }
 
