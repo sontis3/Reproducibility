@@ -1,7 +1,7 @@
 ﻿[CmdletBinding()]
 Param(
-    [Parameter(Mandatory=$False)]
-    [string]$inPath
+  [Parameter(Mandatory = $False)]
+  [string]$inPath
 )
 # $OutputEncoding = [Console]::OutputEncoding
 # $OutputEncoding = [system.Text.Encoding]::UTF8
@@ -11,17 +11,17 @@ $ErrorActionPreference = "Stop"
 $scriptPath = Split-Path $MyInvocation.MyCommand.path
 $systemPath = Split-Path -Parent $scriptPath
 if (!$inPath) {
-    $inPath = Split-Path -Parent $systemPath | Join-Path -ChildPath 'In-Data' 
+  $inPath = Split-Path -Parent $systemPath | Join-Path -ChildPath 'In-Data' 
 }
 
 $normPath = Split-Path -Parent $systemPath | Join-Path -ChildPath "Normal concenrations blood.xlsx" 
 
-$tmpPath = $inPath | Join-Path -ChildPath 'tmp'
-if($isCleanStart -and (Test-Path $tmpPath)) {
-    Remove-Item $tmpPath -Recurse
+$tmpPath = $inPath | Join-Path -ChildPath 'result'
+if ($isCleanStart -and (Test-Path $tmpPath)) {
+  Remove-Item $tmpPath -Recurse
 }
 if (!(Test-Path $tmpPath)) {
-    New-Item -ItemType Directory -Path $tmpPath | Out-Null
+  New-Item -ItemType Directory -Path $tmpPath | Out-Null
 }
 
 # $tmpExcelPath = Join-Path -Path $tmpPath -ChildPath 'out.xlsx'
@@ -32,9 +32,19 @@ $EpPlusPath = Split-Path -Parent $scriptPath | Join-Path -ChildPath "packages\EP
 
 $BioFluidNames = @("Blood Serum", "Лист2")
 
-$ranges = @{}
+# загрузка диапазонов по всем жидкостям
+function Import-Norm-Ranges () {
+#   [CmdletBinding()]
+#   Param(
+#     [Parameter(Mandatory = $True)] [string]$Path # путь к файлу с данными
+#   )
+  
+  $ranges = @{}
 
-$BioFluidNames.ForEach({
-    $item = Import-Normal-Ranges -Path $normPath -Name $_
-    $ranges.Add($_, $item)
-})
+  $BioFluidNames.ForEach( {
+      $item = Import-BioFluid-Ranges -Path $normPath -Name $_
+      $ranges.Add($_, $item)
+    })
+
+    $ranges
+}

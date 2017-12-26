@@ -1,0 +1,38 @@
+﻿{
+    "preparates": [
+        {
+            "name": "Метилпреднизолон",
+            "code": "T"
+        },
+        {
+            "name": "Медрол",
+            "code": "R"
+        }
+    ],
+    "compound":
+        {
+            "rus": "Метилпреднизолон",
+            "eng": "Methylprednisolone"
+        },
+    "periods": ["I", "II"],
+    "rand_numbers": [
+        { "name": "001", "tests": ["T","R"] },
+        { "name": "002", "tests": ["T","R"] },
+        { "name": "003", "tests": ["R","T"] },
+        { "name": "004", "tests": ["R","T"] },
+        { "name": "005", "tests": ["T","R"] },
+        { "name": "006", "tests": ["R","T"] },
+        { "name": "007", "tests": ["R","T"] },
+        { "name": "008", "tests": ["R","T"] },
+        { "name": "009", "tests": ["T","R"] },
+        { "name": "010", "tests": ["T","R"] },
+        { "name": "011", "tests": ["T","R"] },
+        { "name": "012", "tests": ["T","R"] },
+        { "name": "013", "tests": ["R","T"] },
+        { "name": "014", "tests": ["R","T"] },
+        { "name": "015", "tests": ["T","R"] },
+        { "name": "016", "tests": ["T","R"] },
+        { "name": "017", "tests": ["R","T"] },
+        { "name": "018", "tests": ["R","T"] }
+    ]
+}

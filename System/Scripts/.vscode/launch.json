@@ -1,0 +1,48 @@
+{
+  // Используйте IntelliSense, чтобы узнать о возможных атрибутах.
+  // Наведите указатель мыши, чтобы просмотреть описания существующих атрибутов.
+  // Для получения дополнительной информации посетите: https://go.microsoft.com/fwlink/?linkid=830387
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "PowerShell",
+      "request": "launch",
+      "name": "PowerShell Launch Current File",
+      "script": "${file}",
+      "args": [],
+      "cwd": "${file}"
+    },
+    {
+      "type": "PowerShell",
+      "request": "launch",
+      "name": "PowerShell Launch Current File in Temporary Console",
+      "script": "${file}",
+      "args": [],
+      "cwd": "${file}",
+      "createTemporaryIntegratedConsole": true
+    },
+    {
+      "type": "PowerShell",
+      "request": "launch",
+      "name": "PowerShell Launch Current File w/Args Prompt",
+      "script": "${file}",
+      "args": [
+        "${command:SpecifyScriptArgs}"
+      ],
+      "cwd": "${file}"
+    },
+    {
+      "type": "PowerShell",
+      "request": "attach",
+      "name": "PowerShell Attach to Host Process",
+      "processId": "${command:PickPSHostProcess}",
+      "runspaceId": 1
+    },
+    {
+      "type": "PowerShell",
+      "request": "launch",
+      "name": "PowerShell Interactive Session",
+      "cwd": "${workspaceRoot}"
+    }
+  ]
+}

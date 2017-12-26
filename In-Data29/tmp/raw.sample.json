@@ -1,0 +1,4538 @@
+[
+    {
+        "randNum":  "001",
+        "period":  "I",
+        "timePoint":  "0",
+        "CalcConc":  0,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "001",
+        "period":  "I",
+        "timePoint":  "1",
+        "CalcConc":  2.5024011449,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "001",
+        "period":  "I",
+        "timePoint":  "2",
+        "CalcConc":  12.5888941383,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "001",
+        "period":  "I",
+        "timePoint":  "3",
+        "CalcConc":  35.8067121723,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "001",
+        "period":  "I",
+        "timePoint":  "4",
+        "CalcConc":  50.5505673966,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "001",
+        "period":  "I",
+        "timePoint":  "5",
+        "CalcConc":  61.1245406086,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "001",
+        "period":  "I",
+        "timePoint":  "6",
+        "CalcConc":  74.4387846717,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "001",
+        "period":  "I",
+        "timePoint":  "7",
+        "CalcConc":  64.9892423683,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "001",
+        "period":  "I",
+        "timePoint":  "8",
+        "CalcConc":  86.5720882003,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "001",
+        "period":  "I",
+        "timePoint":  "9",
+        "CalcConc":  70.7615351833,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "001",
+        "period":  "I",
+        "timePoint":  "10",
+        "CalcConc":  0,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "001",
+        "period":  "I",
+        "timePoint":  "11",
+        "CalcConc":  22.4463215871,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "001",
+        "period":  "I",
+        "timePoint":  "12",
+        "CalcConc":  39.257240732,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "001",
+        "period":  "I",
+        "timePoint":  "13",
+        "CalcConc":  30.609381527,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "001",
+        "period":  "I",
+        "timePoint":  "14",
+        "CalcConc":  20.723116767,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "001",
+        "period":  "I",
+        "timePoint":  "15",
+        "CalcConc":  8.7454255306,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "001",
+        "period":  "I",
+        "timePoint":  "16",
+        "CalcConc":  0,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "001",
+        "period":  "I",
+        "timePoint":  "17",
+        "CalcConc":  0,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "001",
+        "period":  "II",
+        "timePoint":  "0",
+        "CalcConc":  0,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "001",
+        "period":  "II",
+        "timePoint":  "1",
+        "CalcConc":  15.9110440193,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "001",
+        "period":  "II",
+        "timePoint":  "2",
+        "CalcConc":  51.6307723207,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "001",
+        "period":  "II",
+        "timePoint":  "3",
+        "CalcConc":  57.9764723524,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "001",
+        "period":  "II",
+        "timePoint":  "4",
+        "CalcConc":  86.6140768071,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "001",
+        "period":  "II",
+        "timePoint":  "5",
+        "CalcConc":  92.0936241194,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "001",
+        "period":  "II",
+        "timePoint":  "6",
+        "CalcConc":  110.4860133826,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "001",
+        "period":  "II",
+        "timePoint":  "7",
+        "CalcConc":  111.3997018454,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "001",
+        "period":  "II",
+        "timePoint":  "8",
+        "CalcConc":  91.3290600412,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "001",
+        "period":  "II",
+        "timePoint":  "9",
+        "CalcConc":  83.8613370848,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "001",
+        "period":  "II",
+        "timePoint":  "10",
+        "CalcConc":  79.7975135943,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "001",
+        "period":  "II",
+        "timePoint":  "11",
+        "CalcConc":  63.629399367,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "001",
+        "period":  "II",
+        "timePoint":  "12",
+        "CalcConc":  27.209479119,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "001",
+        "period":  "II",
+        "timePoint":  "13",
+        "CalcConc":  27.5941228345,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "001",
+        "period":  "II",
+        "timePoint":  "14",
+        "CalcConc":  10.2199256029,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "001",
+        "period":  "II",
+        "timePoint":  "15",
+        "CalcConc":  3.3944811222,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "001",
+        "period":  "II",
+        "timePoint":  "16",
+        "CalcConc":  0,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "001",
+        "period":  "II",
+        "timePoint":  "17",
+        "CalcConc":  0,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "002",
+        "period":  "I",
+        "timePoint":  "0",
+        "CalcConc":  0,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "002",
+        "period":  "I",
+        "timePoint":  "1",
+        "CalcConc":  17.9654782114,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "002",
+        "period":  "I",
+        "timePoint":  "2",
+        "CalcConc":  62.1269637589,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "002",
+        "period":  "I",
+        "timePoint":  "3",
+        "CalcConc":  76.1768712212,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "002",
+        "period":  "I",
+        "timePoint":  "4",
+        "CalcConc":  89.6432374624,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "002",
+        "period":  "I",
+        "timePoint":  "5",
+        "CalcConc":  77.8577949667,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "002",
+        "period":  "I",
+        "timePoint":  "6",
+        "CalcConc":  101.2504257947,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "002",
+        "period":  "I",
+        "timePoint":  "7",
+        "CalcConc":  110.2075305527,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "002",
+        "period":  "I",
+        "timePoint":  "8",
+        "CalcConc":  103.9019863306,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "002",
+        "period":  "I",
+        "timePoint":  "9",
+        "CalcConc":  87.9691184643,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "002",
+        "period":  "I",
+        "timePoint":  "10",
+        "CalcConc":  59.63965306,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "002",
+        "period":  "I",
+        "timePoint":  "11",
+        "CalcConc":  71.5163210928,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "002",
+        "period":  "I",
+        "timePoint":  "12",
+        "CalcConc":  26.1489475194,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "002",
+        "period":  "I",
+        "timePoint":  "13",
+        "CalcConc":  28.0543060716,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "002",
+        "period":  "I",
+        "timePoint":  "14",
+        "CalcConc":  13.2684524916,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "002",
+        "period":  "I",
+        "timePoint":  "15",
+        "CalcConc":  2.9046124177,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "002",
+        "period":  "I",
+        "timePoint":  "16",
+        "CalcConc":  0,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "002",
+        "period":  "I",
+        "timePoint":  "17",
+        "CalcConc":  0,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "002",
+        "period":  "II",
+        "timePoint":  "0",
+        "CalcConc":  0,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "002",
+        "period":  "II",
+        "timePoint":  "1",
+        "CalcConc":  6.180693768,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "002",
+        "period":  "II",
+        "timePoint":  "2",
+        "CalcConc":  24.4943068674,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "002",
+        "period":  "II",
+        "timePoint":  "3",
+        "CalcConc":  61.269877537,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "002",
+        "period":  "II",
+        "timePoint":  "4",
+        "CalcConc":  77.0233944862,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "002",
+        "period":  "II",
+        "timePoint":  "5",
+        "CalcConc":  90.6679125271,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "002",
+        "period":  "II",
+        "timePoint":  "6",
+        "CalcConc":  90.6547856037,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "002",
+        "period":  "II",
+        "timePoint":  "7",
+        "CalcConc":  97.7208188546,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "002",
+        "period":  "II",
+        "timePoint":  "8",
+        "CalcConc":  100.3553139027,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "002",
+        "period":  "II",
+        "timePoint":  "9",
+        "CalcConc":  92.9732742212,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "002",
+        "period":  "II",
+        "timePoint":  "10",
+        "CalcConc":  86.0726021843,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "002",
+        "period":  "II",
+        "timePoint":  "11",
+        "CalcConc":  66.5880168231,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "002",
+        "period":  "II",
+        "timePoint":  "12",
+        "CalcConc":  46.1593068647,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "002",
+        "period":  "II",
+        "timePoint":  "13",
+        "CalcConc":  34.1188325709,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "002",
+        "period":  "II",
+        "timePoint":  "14",
+        "CalcConc":  18.972303,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "002",
+        "period":  "II",
+        "timePoint":  "15",
+        "CalcConc":  5.4500023191,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "002",
+        "period":  "II",
+        "timePoint":  "16",
+        "CalcConc":  0,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "002",
+        "period":  "II",
+        "timePoint":  "17",
+        "CalcConc":  0,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "003",
+        "period":  "I",
+        "timePoint":  "0",
+        "CalcConc":  0,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "003",
+        "period":  "I",
+        "timePoint":  "1",
+        "CalcConc":  8.8071605788,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "003",
+        "period":  "I",
+        "timePoint":  "2",
+        "CalcConc":  12.5188968787,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "003",
+        "period":  "I",
+        "timePoint":  "3",
+        "CalcConc":  41.3293253473,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "003",
+        "period":  "I",
+        "timePoint":  "4",
+        "CalcConc":  55.5257298596,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "003",
+        "period":  "I",
+        "timePoint":  "5",
+        "CalcConc":  81.1752117461,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "003",
+        "period":  "I",
+        "timePoint":  "6",
+        "CalcConc":  84.4217099928,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "003",
+        "period":  "I",
+        "timePoint":  "7",
+        "CalcConc":  78.4747652411,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "003",
+        "period":  "I",
+        "timePoint":  "8",
+        "CalcConc":  101.6708675515,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "003",
+        "period":  "I",
+        "timePoint":  "9",
+        "CalcConc":  96.0700826459,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "003",
+        "period":  "I",
+        "timePoint":  "10",
+        "CalcConc":  87.4989035865,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "003",
+        "period":  "I",
+        "timePoint":  "11",
+        "CalcConc":  66.1073608498,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "003",
+        "period":  "I",
+        "timePoint":  "12",
+        "CalcConc":  48.4954946501,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "003",
+        "period":  "I",
+        "timePoint":  "13",
+        "CalcConc":  42.3502373281,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "003",
+        "period":  "I",
+        "timePoint":  "14",
+        "CalcConc":  27.1537591556,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "003",
+        "period":  "I",
+        "timePoint":  "15",
+        "CalcConc":  9.5240329309,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "003",
+        "period":  "I",
+        "timePoint":  "16",
+        "CalcConc":  2.2938912023,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "003",
+        "period":  "I",
+        "timePoint":  "17",
+        "CalcConc":  0,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "003",
+        "period":  "II",
+        "timePoint":  "0",
+        "CalcConc":  0,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "003",
+        "period":  "II",
+        "timePoint":  "1",
+        "CalcConc":  6.8652581927,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "003",
+        "period":  "II",
+        "timePoint":  "2",
+        "CalcConc":  27.7603273303,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "003",
+        "period":  "II",
+        "timePoint":  "3",
+        "CalcConc":  70.1047600606,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "003",
+        "period":  "II",
+        "timePoint":  "4",
+        "CalcConc":  97.0618063544,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "003",
+        "period":  "II",
+        "timePoint":  "5",
+        "CalcConc":  98.5087608477,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "003",
+        "period":  "II",
+        "timePoint":  "6",
+        "CalcConc":  103.0051050092,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "003",
+        "period":  "II",
+        "timePoint":  "7",
+        "CalcConc":  135.5322027322,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "003",
+        "period":  "II",
+        "timePoint":  "8",
+        "CalcConc":  132.9869444412,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "003",
+        "period":  "II",
+        "timePoint":  "9",
+        "CalcConc":  119.1888223861,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "003",
+        "period":  "II",
+        "timePoint":  "10",
+        "CalcConc":  113.6341450068,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "003",
+        "period":  "II",
+        "timePoint":  "11",
+        "CalcConc":  74.7951370157,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "003",
+        "period":  "II",
+        "timePoint":  "12",
+        "CalcConc":  66.0256063904,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "003",
+        "period":  "II",
+        "timePoint":  "13",
+        "CalcConc":  42.6286080454,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "003",
+        "period":  "II",
+        "timePoint":  "14",
+        "CalcConc":  24.5205363419,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "003",
+        "period":  "II",
+        "timePoint":  "15",
+        "CalcConc":  6.659697299,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "003",
+        "period":  "II",
+        "timePoint":  "16",
+        "CalcConc":  0,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "003",
+        "period":  "II",
+        "timePoint":  "17",
+        "CalcConc":  0,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "004",
+        "period":  "I",
+        "timePoint":  "0",
+        "CalcConc":  0,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "004",
+        "period":  "I",
+        "timePoint":  "1",
+        "CalcConc":  2.6551103138,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "004",
+        "period":  "I",
+        "timePoint":  "2",
+        "CalcConc":  9.7585055313,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "004",
+        "period":  "I",
+        "timePoint":  "3",
+        "CalcConc":  32.6945176953,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "004",
+        "period":  "I",
+        "timePoint":  "4",
+        "CalcConc":  48.1306600784,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "004",
+        "period":  "I",
+        "timePoint":  "5",
+        "CalcConc":  55.4137581246,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "004",
+        "period":  "I",
+        "timePoint":  "6",
+        "CalcConc":  62.03860973,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "004",
+        "period":  "I",
+        "timePoint":  "7",
+        "CalcConc":  69.8946562051,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "004",
+        "period":  "I",
+        "timePoint":  "8",
+        "CalcConc":  76.3384754089,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "004",
+        "period":  "I",
+        "timePoint":  "9",
+        "CalcConc":  87.8053649576,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "004",
+        "period":  "I",
+        "timePoint":  "10",
+        "CalcConc":  68.9276870194,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "004",
+        "period":  "I",
+        "timePoint":  "11",
+        "CalcConc":  69.0467890398,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "004",
+        "period":  "I",
+        "timePoint":  "12",
+        "CalcConc":  49.1302320369,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "004",
+        "period":  "I",
+        "timePoint":  "13",
+        "CalcConc":  32.8977010912,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "004",
+        "period":  "I",
+        "timePoint":  "14",
+        "CalcConc":  20.0732148346,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "004",
+        "period":  "I",
+        "timePoint":  "15",
+        "CalcConc":  6.8313504576,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "004",
+        "period":  "I",
+        "timePoint":  "16",
+        "CalcConc":  0,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "004",
+        "period":  "I",
+        "timePoint":  "17",
+        "CalcConc":  0,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "004",
+        "period":  "II",
+        "timePoint":  "0",
+        "CalcConc":  0,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "004",
+        "period":  "II",
+        "timePoint":  "1",
+        "CalcConc":  15.8563123441,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "004",
+        "period":  "II",
+        "timePoint":  "2",
+        "CalcConc":  47.5815926287,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "004",
+        "period":  "II",
+        "timePoint":  "3",
+        "CalcConc":  78.8954085693,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "004",
+        "period":  "II",
+        "timePoint":  "4",
+        "CalcConc":  99.9527905454,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "004",
+        "period":  "II",
+        "timePoint":  "5",
+        "CalcConc":  96.9658816888,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "004",
+        "period":  "II",
+        "timePoint":  "6",
+        "CalcConc":  101.3389089044,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "004",
+        "period":  "II",
+        "timePoint":  "7",
+        "CalcConc":  110.2224483711,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "004",
+        "period":  "II",
+        "timePoint":  "8",
+        "CalcConc":  96.7706911314,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "004",
+        "period":  "II",
+        "timePoint":  "9",
+        "CalcConc":  94.9966300636,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "004",
+        "period":  "II",
+        "timePoint":  "10",
+        "CalcConc":  81.9550024613,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "004",
+        "period":  "II",
+        "timePoint":  "11",
+        "CalcConc":  65.9215327219,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "004",
+        "period":  "II",
+        "timePoint":  "12",
+        "CalcConc":  33.0631738952,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "004",
+        "period":  "II",
+        "timePoint":  "13",
+        "CalcConc":  28.6911579765,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "004",
+        "period":  "II",
+        "timePoint":  "14",
+        "CalcConc":  12.4915532132,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "004",
+        "period":  "II",
+        "timePoint":  "15",
+        "CalcConc":  3.085856033,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "004",
+        "period":  "II",
+        "timePoint":  "16",
+        "CalcConc":  0,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "004",
+        "period":  "II",
+        "timePoint":  "17",
+        "CalcConc":  0,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "005",
+        "period":  "I",
+        "timePoint":  "0",
+        "CalcConc":  0,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "005",
+        "period":  "I",
+        "timePoint":  "1",
+        "CalcConc":  5.0432441708,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "005",
+        "period":  "I",
+        "timePoint":  "2",
+        "CalcConc":  14.3636844071,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "005",
+        "period":  "I",
+        "timePoint":  "3",
+        "CalcConc":  37.5838145153,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "005",
+        "period":  "I",
+        "timePoint":  "4",
+        "CalcConc":  51.0328407402,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "005",
+        "period":  "I",
+        "timePoint":  "5",
+        "CalcConc":  62.5408341153,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "005",
+        "period":  "I",
+        "timePoint":  "6",
+        "CalcConc":  63.2683158886,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "005",
+        "period":  "I",
+        "timePoint":  "7",
+        "CalcConc":  66.7319870375,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "005",
+        "period":  "I",
+        "timePoint":  "8",
+        "CalcConc":  78.9216971537,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "005",
+        "period":  "I",
+        "timePoint":  "9",
+        "CalcConc":  81.3649800563,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "005",
+        "period":  "I",
+        "timePoint":  "10",
+        "CalcConc":  82.8087474687,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "005",
+        "period":  "I",
+        "timePoint":  "11",
+        "CalcConc":  68.384405009,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "005",
+        "period":  "I",
+        "timePoint":  "12",
+        "CalcConc":  44.3943443276,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "005",
+        "period":  "I",
+        "timePoint":  "13",
+        "CalcConc":  31.4597550525,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "005",
+        "period":  "I",
+        "timePoint":  "14",
+        "CalcConc":  23.1614433144,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "005",
+        "period":  "I",
+        "timePoint":  "15",
+        "CalcConc":  7.1854891577,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "005",
+        "period":  "I",
+        "timePoint":  "16",
+        "CalcConc":  0,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "005",
+        "period":  "I",
+        "timePoint":  "17",
+        "CalcConc":  0,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "005",
+        "period":  "II",
+        "timePoint":  "0",
+        "CalcConc":  0,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "005",
+        "period":  "II",
+        "timePoint":  "1",
+        "CalcConc":  6.3039873888,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "005",
+        "period":  "II",
+        "timePoint":  "2",
+        "CalcConc":  20.1741340458,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "005",
+        "period":  "II",
+        "timePoint":  "3",
+        "CalcConc":  42.1543064228,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "005",
+        "period":  "II",
+        "timePoint":  "4",
+        "CalcConc":  67.1402429524,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "005",
+        "period":  "II",
+        "timePoint":  "5",
+        "CalcConc":  83.5229848467,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "005",
+        "period":  "II",
+        "timePoint":  "6",
+        "CalcConc":  92.9296163215,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "005",
+        "period":  "II",
+        "timePoint":  "7",
+        "CalcConc":  98.2005365284,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "005",
+        "period":  "II",
+        "timePoint":  "8",
+        "CalcConc":  102.6810076165,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "005",
+        "period":  "II",
+        "timePoint":  "9",
+        "CalcConc":  90.2594949172,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "005",
+        "period":  "II",
+        "timePoint":  "10",
+        "CalcConc":  81.6278813007,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "005",
+        "period":  "II",
+        "timePoint":  "11",
+        "CalcConc":  57.6298021135,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "005",
+        "period":  "II",
+        "timePoint":  "12",
+        "CalcConc":  47.0476176293,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "005",
+        "period":  "II",
+        "timePoint":  "13",
+        "CalcConc":  25.0956486271,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "005",
+        "period":  "II",
+        "timePoint":  "14",
+        "CalcConc":  18.7164394845,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "005",
+        "period":  "II",
+        "timePoint":  "15",
+        "CalcConc":  3.8967723624,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "005",
+        "period":  "II",
+        "timePoint":  "16",
+        "CalcConc":  0,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "005",
+        "period":  "II",
+        "timePoint":  "17",
+        "CalcConc":  0,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "006",
+        "period":  "I",
+        "timePoint":  "0",
+        "CalcConc":  0,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "006",
+        "period":  "I",
+        "timePoint":  "1",
+        "CalcConc":  3.9072703423,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "006",
+        "period":  "I",
+        "timePoint":  "2",
+        "CalcConc":  13.3102211073,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "006",
+        "period":  "I",
+        "timePoint":  "3",
+        "CalcConc":  35.4880891831,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "006",
+        "period":  "I",
+        "timePoint":  "4",
+        "CalcConc":  56.5968368252,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "006",
+        "period":  "I",
+        "timePoint":  "5",
+        "CalcConc":  69.3117282784,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "006",
+        "period":  "I",
+        "timePoint":  "6",
+        "CalcConc":  72.8224067632,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "006",
+        "period":  "I",
+        "timePoint":  "7",
+        "CalcConc":  65.86404794,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "006",
+        "period":  "I",
+        "timePoint":  "8",
+        "CalcConc":  71.3899432881,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "006",
+        "period":  "I",
+        "timePoint":  "9",
+        "CalcConc":  83.7305625071,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "006",
+        "period":  "I",
+        "timePoint":  "10",
+        "CalcConc":  81.3598825042,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "006",
+        "period":  "I",
+        "timePoint":  "11",
+        "CalcConc":  65.3224651136,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "006",
+        "period":  "I",
+        "timePoint":  "12",
+        "CalcConc":  47.2809551249,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "006",
+        "period":  "I",
+        "timePoint":  "13",
+        "CalcConc":  36.6228258413,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "006",
+        "period":  "I",
+        "timePoint":  "14",
+        "CalcConc":  24.1370932258,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "006",
+        "period":  "I",
+        "timePoint":  "15",
+        "CalcConc":  8.3396303949,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "006",
+        "period":  "I",
+        "timePoint":  "16",
+        "CalcConc":  0,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "006",
+        "period":  "I",
+        "timePoint":  "17",
+        "CalcConc":  0,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "006",
+        "period":  "II",
+        "timePoint":  "0",
+        "CalcConc":  0,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "006",
+        "period":  "II",
+        "timePoint":  "1",
+        "CalcConc":  6.5152098246,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "006",
+        "period":  "II",
+        "timePoint":  "2",
+        "CalcConc":  39.1820742041,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "006",
+        "period":  "II",
+        "timePoint":  "3",
+        "CalcConc":  79.302565918,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "006",
+        "period":  "II",
+        "timePoint":  "4",
+        "CalcConc":  95.9337377584,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "006",
+        "period":  "II",
+        "timePoint":  "5",
+        "CalcConc":  102.9809726335,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "006",
+        "period":  "II",
+        "timePoint":  "6",
+        "CalcConc":  112.7322304579,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "006",
+        "period":  "II",
+        "timePoint":  "7",
+        "CalcConc":  114.1037132468,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "006",
+        "period":  "II",
+        "timePoint":  "8",
+        "CalcConc":  104.2502477061,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "006",
+        "period":  "II",
+        "timePoint":  "9",
+        "CalcConc":  73.1008522048,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "006",
+        "period":  "II",
+        "timePoint":  "10",
+        "CalcConc":  78.5059822829,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "006",
+        "period":  "II",
+        "timePoint":  "11",
+        "CalcConc":  54.8981250724,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "006",
+        "period":  "II",
+        "timePoint":  "12",
+        "CalcConc":  35.2269795254,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "006",
+        "period":  "II",
+        "timePoint":  "13",
+        "CalcConc":  28.5931494521,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "006",
+        "period":  "II",
+        "timePoint":  "14",
+        "CalcConc":  13.8981541833,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "006",
+        "period":  "II",
+        "timePoint":  "15",
+        "CalcConc":  3.223176797,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "006",
+        "period":  "II",
+        "timePoint":  "16",
+        "CalcConc":  0,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "006",
+        "period":  "II",
+        "timePoint":  "17",
+        "CalcConc":  0,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "007",
+        "period":  "I",
+        "timePoint":  "0",
+        "CalcConc":  0,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "007",
+        "period":  "I",
+        "timePoint":  "1",
+        "CalcConc":  13.2959808157,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "007",
+        "period":  "I",
+        "timePoint":  "2",
+        "CalcConc":  60.5548011228,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "007",
+        "period":  "I",
+        "timePoint":  "3",
+        "CalcConc":  98.7105432793,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "007",
+        "period":  "I",
+        "timePoint":  "4",
+        "CalcConc":  123.4346103952,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "007",
+        "period":  "I",
+        "timePoint":  "5",
+        "CalcConc":  125.5720863731,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "007",
+        "period":  "I",
+        "timePoint":  "6",
+        "CalcConc":  130.1160227549,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "007",
+        "period":  "I",
+        "timePoint":  "7",
+        "CalcConc":  131.3467864118,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "007",
+        "period":  "I",
+        "timePoint":  "8",
+        "CalcConc":  134.1942646414,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "007",
+        "period":  "I",
+        "timePoint":  "9",
+        "CalcConc":  120.2070385577,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "007",
+        "period":  "I",
+        "timePoint":  "10",
+        "CalcConc":  95.0626621006,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "007",
+        "period":  "I",
+        "timePoint":  "11",
+        "CalcConc":  94.0225509991,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "007",
+        "period":  "I",
+        "timePoint":  "12",
+        "CalcConc":  42.747337051,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "007",
+        "period":  "I",
+        "timePoint":  "13",
+        "CalcConc":  36.0663097027,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "007",
+        "period":  "I",
+        "timePoint":  "14",
+        "CalcConc":  15.6146842678,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "007",
+        "period":  "I",
+        "timePoint":  "15",
+        "CalcConc":  3.4980287981,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "007",
+        "period":  "I",
+        "timePoint":  "16",
+        "CalcConc":  0,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "007",
+        "period":  "I",
+        "timePoint":  "17",
+        "CalcConc":  0,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "007",
+        "period":  "II",
+        "timePoint":  "0",
+        "CalcConc":  0,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "007",
+        "period":  "II",
+        "timePoint":  "1",
+        "CalcConc":  8.6538716379,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "007",
+        "period":  "II",
+        "timePoint":  "2",
+        "CalcConc":  32.8273312582,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "007",
+        "period":  "II",
+        "timePoint":  "3",
+        "CalcConc":  63.3681673346,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "007",
+        "period":  "II",
+        "timePoint":  "4",
+        "CalcConc":  93.8120472514,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "007",
+        "period":  "II",
+        "timePoint":  "5",
+        "CalcConc":  114.6518053341,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "007",
+        "period":  "II",
+        "timePoint":  "6",
+        "CalcConc":  120.9668356285,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "007",
+        "period":  "II",
+        "timePoint":  "7",
+        "CalcConc":  125.5949971234,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "007",
+        "period":  "II",
+        "timePoint":  "8",
+        "CalcConc":  118.6677369614,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "007",
+        "period":  "II",
+        "timePoint":  "9",
+        "CalcConc":  120.1487580854,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "007",
+        "period":  "II",
+        "timePoint":  "10",
+        "CalcConc":  88.0999706147,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "007",
+        "period":  "II",
+        "timePoint":  "11",
+        "CalcConc":  67.2893656019,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "007",
+        "period":  "II",
+        "timePoint":  "12",
+        "CalcConc":  61.9110169229,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "007",
+        "period":  "II",
+        "timePoint":  "13",
+        "CalcConc":  33.8220726059,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "007",
+        "period":  "II",
+        "timePoint":  "14",
+        "CalcConc":  24.201872692,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "007",
+        "period":  "II",
+        "timePoint":  "15",
+        "CalcConc":  7.1559510764,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "007",
+        "period":  "II",
+        "timePoint":  "16",
+        "CalcConc":  0,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "007",
+        "period":  "II",
+        "timePoint":  "17",
+        "CalcConc":  0,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "008",
+        "period":  "I",
+        "timePoint":  "0",
+        "CalcConc":  0,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "008",
+        "period":  "I",
+        "timePoint":  "1",
+        "CalcConc":  9.5521863914,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "008",
+        "period":  "I",
+        "timePoint":  "2",
+        "CalcConc":  55.080647478,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "008",
+        "period":  "I",
+        "timePoint":  "3",
+        "CalcConc":  85.1279985944,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "008",
+        "period":  "I",
+        "timePoint":  "4",
+        "CalcConc":  105.1807770828,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "008",
+        "period":  "I",
+        "timePoint":  "5",
+        "CalcConc":  109.1678624118,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "008",
+        "period":  "I",
+        "timePoint":  "6",
+        "CalcConc":  118.5818436385,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "008",
+        "period":  "I",
+        "timePoint":  "7",
+        "CalcConc":  121.9296760553,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "008",
+        "period":  "I",
+        "timePoint":  "8",
+        "CalcConc":  106.7560922835,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "008",
+        "period":  "I",
+        "timePoint":  "9",
+        "CalcConc":  103.3026095823,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "008",
+        "period":  "I",
+        "timePoint":  "10",
+        "CalcConc":  85.8505650708,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "008",
+        "period":  "I",
+        "timePoint":  "11",
+        "CalcConc":  91.1394440562,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "008",
+        "period":  "I",
+        "timePoint":  "12",
+        "CalcConc":  39.3349746695,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "008",
+        "period":  "I",
+        "timePoint":  "13",
+        "CalcConc":  30.7216471713,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "008",
+        "period":  "I",
+        "timePoint":  "14",
+        "CalcConc":  14.7915931444,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "008",
+        "period":  "I",
+        "timePoint":  "15",
+        "CalcConc":  3.5730018785,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "008",
+        "period":  "I",
+        "timePoint":  "16",
+        "CalcConc":  0,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "008",
+        "period":  "I",
+        "timePoint":  "17",
+        "CalcConc":  0,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "008",
+        "period":  "II",
+        "timePoint":  "0",
+        "CalcConc":  0,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "008",
+        "period":  "II",
+        "timePoint":  "1",
+        "CalcConc":  6.3472369295,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "008",
+        "period":  "II",
+        "timePoint":  "2",
+        "CalcConc":  16.6600573815,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "008",
+        "period":  "II",
+        "timePoint":  "3",
+        "CalcConc":  39.179419829,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "008",
+        "period":  "II",
+        "timePoint":  "4",
+        "CalcConc":  59.0199226187,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "008",
+        "period":  "II",
+        "timePoint":  "5",
+        "CalcConc":  69.1958501997,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "008",
+        "period":  "II",
+        "timePoint":  "6",
+        "CalcConc":  82.8846905683,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "008",
+        "period":  "II",
+        "timePoint":  "7",
+        "CalcConc":  86.2993073764,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "008",
+        "period":  "II",
+        "timePoint":  "8",
+        "CalcConc":  88.7338561556,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "008",
+        "period":  "II",
+        "timePoint":  "9",
+        "CalcConc":  93.5900848811,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "008",
+        "period":  "II",
+        "timePoint":  "10",
+        "CalcConc":  82.5421413534,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "008",
+        "period":  "II",
+        "timePoint":  "11",
+        "CalcConc":  70.5772634553,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "008",
+        "period":  "II",
+        "timePoint":  "12",
+        "CalcConc":  51.3389106044,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "008",
+        "period":  "II",
+        "timePoint":  "13",
+        "CalcConc":  41.8221564471,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "008",
+        "period":  "II",
+        "timePoint":  "14",
+        "CalcConc":  23.7871715761,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "008",
+        "period":  "II",
+        "timePoint":  "15",
+        "CalcConc":  9.3083702831,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "008",
+        "period":  "II",
+        "timePoint":  "16",
+        "CalcConc":  2.2039242567,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "008",
+        "period":  "II",
+        "timePoint":  "17",
+        "CalcConc":  0,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "009",
+        "period":  "I",
+        "timePoint":  "0",
+        "CalcConc":  0,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "009",
+        "period":  "I",
+        "timePoint":  "1",
+        "CalcConc":  8.4471912483,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "009",
+        "period":  "I",
+        "timePoint":  "2",
+        "CalcConc":  32.3159990219,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "009",
+        "period":  "I",
+        "timePoint":  "3",
+        "CalcConc":  64.3838770017,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "009",
+        "period":  "I",
+        "timePoint":  "4",
+        "CalcConc":  97.5828000242,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "009",
+        "period":  "I",
+        "timePoint":  "5",
+        "CalcConc":  109.8705852343,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "009",
+        "period":  "I",
+        "timePoint":  "6",
+        "CalcConc":  120.4245461918,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "009",
+        "period":  "I",
+        "timePoint":  "7",
+        "CalcConc":  130.2439701123,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "009",
+        "period":  "I",
+        "timePoint":  "8",
+        "CalcConc":  119.1099173276,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "009",
+        "period":  "I",
+        "timePoint":  "9",
+        "CalcConc":  113.8466415074,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "009",
+        "period":  "I",
+        "timePoint":  "10",
+        "CalcConc":  117.6632760456,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "009",
+        "period":  "I",
+        "timePoint":  "11",
+        "CalcConc":  84.238310219,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "009",
+        "period":  "I",
+        "timePoint":  "12",
+        "CalcConc":  58.9037860848,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "009",
+        "period":  "I",
+        "timePoint":  "13",
+        "CalcConc":  43.2138638083,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "009",
+        "period":  "I",
+        "timePoint":  "14",
+        "CalcConc":  25.1708617361,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "009",
+        "period":  "I",
+        "timePoint":  "15",
+        "CalcConc":  6.512403765,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "009",
+        "period":  "I",
+        "timePoint":  "16",
+        "CalcConc":  0,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "009",
+        "period":  "I",
+        "timePoint":  "17",
+        "CalcConc":  0,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "009",
+        "period":  "II",
+        "timePoint":  "0",
+        "CalcConc":  0,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "009",
+        "period":  "II",
+        "timePoint":  "1",
+        "CalcConc":  7.4037349701,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "009",
+        "period":  "II",
+        "timePoint":  "2",
+        "CalcConc":  18.4516400691,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "009",
+        "period":  "II",
+        "timePoint":  "3",
+        "CalcConc":  30.2732074922,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "009",
+        "period":  "II",
+        "timePoint":  "4",
+        "CalcConc":  64.8997831828,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "009",
+        "period":  "II",
+        "timePoint":  "5",
+        "CalcConc":  80.226058852,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "009",
+        "period":  "II",
+        "timePoint":  "6",
+        "CalcConc":  92.2957704232,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "009",
+        "period":  "II",
+        "timePoint":  "7",
+        "CalcConc":  97.5118845405,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "009",
+        "period":  "II",
+        "timePoint":  "8",
+        "CalcConc":  103.9927037516,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "009",
+        "period":  "II",
+        "timePoint":  "9",
+        "CalcConc":  106.326098412,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "009",
+        "period":  "II",
+        "timePoint":  "10",
+        "CalcConc":  95.4461126089,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "009",
+        "period":  "II",
+        "timePoint":  "11",
+        "CalcConc":  77.6586570258,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "009",
+        "period":  "II",
+        "timePoint":  "12",
+        "CalcConc":  59.4140672553,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "009",
+        "period":  "II",
+        "timePoint":  "13",
+        "CalcConc":  47.5875665393,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "009",
+        "period":  "II",
+        "timePoint":  "14",
+        "CalcConc":  27.0767027516,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "009",
+        "period":  "II",
+        "timePoint":  "15",
+        "CalcConc":  10.0873790093,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "009",
+        "period":  "II",
+        "timePoint":  "16",
+        "CalcConc":  2.5157977093,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "009",
+        "period":  "II",
+        "timePoint":  "17",
+        "CalcConc":  0,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "010",
+        "period":  "I",
+        "timePoint":  "0",
+        "CalcConc":  0,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "010",
+        "period":  "I",
+        "timePoint":  "1",
+        "CalcConc":  16.2360968262,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "010",
+        "period":  "I",
+        "timePoint":  "2",
+        "CalcConc":  48.6882960894,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "010",
+        "period":  "I",
+        "timePoint":  "3",
+        "CalcConc":  73.6704860842,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "010",
+        "period":  "I",
+        "timePoint":  "4",
+        "CalcConc":  92.4537606867,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "010",
+        "period":  "I",
+        "timePoint":  "5",
+        "CalcConc":  82.0526933775,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "010",
+        "period":  "I",
+        "timePoint":  "6",
+        "CalcConc":  113.1618649186,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "010",
+        "period":  "I",
+        "timePoint":  "7",
+        "CalcConc":  104.9161181726,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "010",
+        "period":  "I",
+        "timePoint":  "8",
+        "CalcConc":  99.149963523,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "010",
+        "period":  "I",
+        "timePoint":  "9",
+        "CalcConc":  97.8942651712,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "010",
+        "period":  "I",
+        "timePoint":  "10",
+        "CalcConc":  82.8617389879,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "010",
+        "period":  "I",
+        "timePoint":  "11",
+        "CalcConc":  68.3491828276,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "010",
+        "period":  "I",
+        "timePoint":  "12",
+        "CalcConc":  34.8623803132,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "010",
+        "period":  "I",
+        "timePoint":  "13",
+        "CalcConc":  29.2796990024,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "010",
+        "period":  "I",
+        "timePoint":  "14",
+        "CalcConc":  12.5399172545,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "010",
+        "period":  "I",
+        "timePoint":  "15",
+        "CalcConc":  3.3251891785,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "010",
+        "period":  "I",
+        "timePoint":  "16",
+        "CalcConc":  0,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "010",
+        "period":  "I",
+        "timePoint":  "17",
+        "CalcConc":  0,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "010",
+        "period":  "II",
+        "timePoint":  "0",
+        "CalcConc":  0,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "010",
+        "period":  "II",
+        "timePoint":  "1",
+        "CalcConc":  6.3816450857,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "010",
+        "period":  "II",
+        "timePoint":  "2",
+        "CalcConc":  26.6918098404,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "010",
+        "period":  "II",
+        "timePoint":  "3",
+        "CalcConc":  54.7462883938,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "010",
+        "period":  "II",
+        "timePoint":  "4",
+        "CalcConc":  94.2756108309,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "010",
+        "period":  "II",
+        "timePoint":  "5",
+        "CalcConc":  93.6908210871,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "010",
+        "period":  "II",
+        "timePoint":  "6",
+        "CalcConc":  98.6774001861,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "010",
+        "period":  "II",
+        "timePoint":  "7",
+        "CalcConc":  99.1119862952,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "010",
+        "period":  "II",
+        "timePoint":  "8",
+        "CalcConc":  104.5079614473,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "010",
+        "period":  "II",
+        "timePoint":  "9",
+        "CalcConc":  99.745753501,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "010",
+        "period":  "II",
+        "timePoint":  "10",
+        "CalcConc":  88.5138466677,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "010",
+        "period":  "II",
+        "timePoint":  "11",
+        "CalcConc":  69.0864579142,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "010",
+        "period":  "II",
+        "timePoint":  "12",
+        "CalcConc":  48.7664409847,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "010",
+        "period":  "II",
+        "timePoint":  "13",
+        "CalcConc":  33.5821884268,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "010",
+        "period":  "II",
+        "timePoint":  "14",
+        "CalcConc":  20.7016587184,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "010",
+        "period":  "II",
+        "timePoint":  "15",
+        "CalcConc":  5.584046444,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "010",
+        "period":  "II",
+        "timePoint":  "16",
+        "CalcConc":  0,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "010",
+        "period":  "II",
+        "timePoint":  "17",
+        "CalcConc":  0,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "011",
+        "period":  "I",
+        "timePoint":  "0",
+        "CalcConc":  0,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "011",
+        "period":  "I",
+        "timePoint":  "1",
+        "CalcConc":  6.3262308054,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "011",
+        "period":  "I",
+        "timePoint":  "2",
+        "CalcConc":  17.0643568195,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "011",
+        "period":  "I",
+        "timePoint":  "3",
+        "CalcConc":  38.109274773,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "011",
+        "period":  "I",
+        "timePoint":  "4",
+        "CalcConc":  59.4350013255,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "011",
+        "period":  "I",
+        "timePoint":  "5",
+        "CalcConc":  73.4781789328,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "011",
+        "period":  "I",
+        "timePoint":  "6",
+        "CalcConc":  83.2080302038,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "011",
+        "period":  "I",
+        "timePoint":  "7",
+        "CalcConc":  82.7808848646,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "011",
+        "period":  "I",
+        "timePoint":  "8",
+        "CalcConc":  93.6229222615,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "011",
+        "period":  "I",
+        "timePoint":  "9",
+        "CalcConc":  91.6789935354,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "011",
+        "period":  "I",
+        "timePoint":  "10",
+        "CalcConc":  81.680328244,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "011",
+        "period":  "I",
+        "timePoint":  "11",
+        "CalcConc":  70.5127415575,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "011",
+        "period":  "I",
+        "timePoint":  "12",
+        "CalcConc":  49.4638462267,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "011",
+        "period":  "I",
+        "timePoint":  "13",
+        "CalcConc":  38.2121053467,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "011",
+        "period":  "I",
+        "timePoint":  "14",
+        "CalcConc":  25.0443974714,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "011",
+        "period":  "I",
+        "timePoint":  "15",
+        "CalcConc":  9.2169818744,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "011",
+        "period":  "I",
+        "timePoint":  "16",
+        "CalcConc":  2.3388716715,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "011",
+        "period":  "I",
+        "timePoint":  "17",
+        "CalcConc":  0,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "011",
+        "period":  "II",
+        "timePoint":  "0",
+        "CalcConc":  0,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "011",
+        "period":  "II",
+        "timePoint":  "1",
+        "CalcConc":  9.9982530942,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "011",
+        "period":  "II",
+        "timePoint":  "2",
+        "CalcConc":  31.0139699893,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "011",
+        "period":  "II",
+        "timePoint":  "3",
+        "CalcConc":  60.9483069089,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "011",
+        "period":  "II",
+        "timePoint":  "4",
+        "CalcConc":  87.768717702199993,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "011",
+        "period":  "II",
+        "timePoint":  "5",
+        "CalcConc":  102.9342314332,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "011",
+        "period":  "II",
+        "timePoint":  "6",
+        "CalcConc":  113.7437773085,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "011",
+        "period":  "II",
+        "timePoint":  "7",
+        "CalcConc":  116.8985868382,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "011",
+        "period":  "II",
+        "timePoint":  "8",
+        "CalcConc":  120.1344618494,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "011",
+        "period":  "II",
+        "timePoint":  "9",
+        "CalcConc":  107.7977231953,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "011",
+        "period":  "II",
+        "timePoint":  "10",
+        "CalcConc":  108.7270124139,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "011",
+        "period":  "II",
+        "timePoint":  "11",
+        "CalcConc":  76.711440788,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "011",
+        "period":  "II",
+        "timePoint":  "12",
+        "CalcConc":  57.094727916,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "011",
+        "period":  "II",
+        "timePoint":  "13",
+        "CalcConc":  39.2509069407,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "011",
+        "period":  "II",
+        "timePoint":  "14",
+        "CalcConc":  23.5295259157,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "011",
+        "period":  "II",
+        "timePoint":  "15",
+        "CalcConc":  6.307568836,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "011",
+        "period":  "II",
+        "timePoint":  "16",
+        "CalcConc":  0,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "011",
+        "period":  "II",
+        "timePoint":  "17",
+        "CalcConc":  0,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "012",
+        "period":  "I",
+        "timePoint":  "0",
+        "CalcConc":  0,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "012",
+        "period":  "I",
+        "timePoint":  "1",
+        "CalcConc":  4.6945888091,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "012",
+        "period":  "I",
+        "timePoint":  "2",
+        "CalcConc":  15.3339213125,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "012",
+        "period":  "I",
+        "timePoint":  "3",
+        "CalcConc":  44.4595104344,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "012",
+        "period":  "I",
+        "timePoint":  "4",
+        "CalcConc":  61.7752162714,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "012",
+        "period":  "I",
+        "timePoint":  "5",
+        "CalcConc":  80.8650099126,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "012",
+        "period":  "I",
+        "timePoint":  "6",
+        "CalcConc":  92.4607232453,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "012",
+        "period":  "I",
+        "timePoint":  "7",
+        "CalcConc":  89.6816465092,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "012",
+        "period":  "I",
+        "timePoint":  "8",
+        "CalcConc":  86.6088592894,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "012",
+        "period":  "I",
+        "timePoint":  "9",
+        "CalcConc":  97.9104876539,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "012",
+        "period":  "I",
+        "timePoint":  "10",
+        "CalcConc":  97.0781801849,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "012",
+        "period":  "I",
+        "timePoint":  "11",
+        "CalcConc":  74.4928017918,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "012",
+        "period":  "I",
+        "timePoint":  "12",
+        "CalcConc":  49.5394074064,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "012",
+        "period":  "I",
+        "timePoint":  "13",
+        "CalcConc":  45.242941053,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "012",
+        "period":  "I",
+        "timePoint":  "14",
+        "CalcConc":  23.6879372429,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "012",
+        "period":  "I",
+        "timePoint":  "15",
+        "CalcConc":  9.4448379919,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "012",
+        "period":  "I",
+        "timePoint":  "16",
+        "CalcConc":  2.3105448754,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "012",
+        "period":  "I",
+        "timePoint":  "17",
+        "CalcConc":  0,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "012",
+        "period":  "II",
+        "timePoint":  "0",
+        "CalcConc":  0,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "012",
+        "period":  "II",
+        "timePoint":  "1",
+        "CalcConc":  6.2152166168,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "012",
+        "period":  "II",
+        "timePoint":  "2",
+        "CalcConc":  63.5826684516,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "012",
+        "period":  "II",
+        "timePoint":  "3",
+        "CalcConc":  80.8541454531,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "012",
+        "period":  "II",
+        "timePoint":  "4",
+        "CalcConc":  118.3162246256,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "012",
+        "period":  "II",
+        "timePoint":  "5",
+        "CalcConc":  105.355144805,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "012",
+        "period":  "II",
+        "timePoint":  "6",
+        "CalcConc":  132.1041973082,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "012",
+        "period":  "II",
+        "timePoint":  "7",
+        "CalcConc":  136.5746051551,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "012",
+        "period":  "II",
+        "timePoint":  "8",
+        "CalcConc":  133.5301862461,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "012",
+        "period":  "II",
+        "timePoint":  "9",
+        "CalcConc":  113.5800869041,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "012",
+        "period":  "II",
+        "timePoint":  "10",
+        "CalcConc":  95.6702502167,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "012",
+        "period":  "II",
+        "timePoint":  "11",
+        "CalcConc":  71.6015735231,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "012",
+        "period":  "II",
+        "timePoint":  "12",
+        "CalcConc":  44.0000839016,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "012",
+        "period":  "II",
+        "timePoint":  "13",
+        "CalcConc":  28.1962561496,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "012",
+        "period":  "II",
+        "timePoint":  "14",
+        "CalcConc":  16.2755077968,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "012",
+        "period":  "II",
+        "timePoint":  "15",
+        "CalcConc":  3.268190141,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "012",
+        "period":  "II",
+        "timePoint":  "16",
+        "CalcConc":  0,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "012",
+        "period":  "II",
+        "timePoint":  "17",
+        "CalcConc":  0,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "013",
+        "period":  "I",
+        "timePoint":  "0",
+        "CalcConc":  0,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "013",
+        "period":  "I",
+        "timePoint":  "1",
+        "CalcConc":  3.0439972184,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "013",
+        "period":  "I",
+        "timePoint":  "2",
+        "CalcConc":  9.6408476433,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "013",
+        "period":  "I",
+        "timePoint":  "3",
+        "CalcConc":  29.0895209019,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "013",
+        "period":  "I",
+        "timePoint":  "4",
+        "CalcConc":  49.371453261,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "013",
+        "period":  "I",
+        "timePoint":  "5",
+        "CalcConc":  65.1605131023,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "013",
+        "period":  "I",
+        "timePoint":  "6",
+        "CalcConc":  78.7499736952,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "013",
+        "period":  "I",
+        "timePoint":  "7",
+        "CalcConc":  80.1837871586,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "013",
+        "period":  "I",
+        "timePoint":  "8",
+        "CalcConc":  82.4909560102,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "013",
+        "period":  "I",
+        "timePoint":  "9",
+        "CalcConc":  79.7131789559,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "013",
+        "period":  "I",
+        "timePoint":  "10",
+        "CalcConc":  63.6369951545,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "013",
+        "period":  "I",
+        "timePoint":  "11",
+        "CalcConc":  60.1568303572,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "013",
+        "period":  "I",
+        "timePoint":  "12",
+        "CalcConc":  41.6027127214,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "013",
+        "period":  "I",
+        "timePoint":  "13",
+        "CalcConc":  33.7278168087,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "013",
+        "period":  "I",
+        "timePoint":  "14",
+        "CalcConc":  23.8565830834,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "013",
+        "period":  "I",
+        "timePoint":  "15",
+        "CalcConc":  7.4684403835,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "013",
+        "period":  "I",
+        "timePoint":  "16",
+        "CalcConc":  0,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "013",
+        "period":  "I",
+        "timePoint":  "17",
+        "CalcConc":  0,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "013",
+        "period":  "II",
+        "timePoint":  "0",
+        "CalcConc":  0,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "013",
+        "period":  "II",
+        "timePoint":  "1",
+        "CalcConc":  14.534616952,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "013",
+        "period":  "II",
+        "timePoint":  "2",
+        "CalcConc":  37.9446501109,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "013",
+        "period":  "II",
+        "timePoint":  "3",
+        "CalcConc":  61.1388876138,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "013",
+        "period":  "II",
+        "timePoint":  "4",
+        "CalcConc":  73.9036758181,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "013",
+        "period":  "II",
+        "timePoint":  "5",
+        "CalcConc":  84.2661540511,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "013",
+        "period":  "II",
+        "timePoint":  "6",
+        "CalcConc":  86.4076861561,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "013",
+        "period":  "II",
+        "timePoint":  "7",
+        "CalcConc":  81.1469659851,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "013",
+        "period":  "II",
+        "timePoint":  "8",
+        "CalcConc":  91.3266781049,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "013",
+        "period":  "II",
+        "timePoint":  "9",
+        "CalcConc":  91.7342539389,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "013",
+        "period":  "II",
+        "timePoint":  "10",
+        "CalcConc":  91.850956561,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "013",
+        "period":  "II",
+        "timePoint":  "11",
+        "CalcConc":  74.8954256176,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "013",
+        "period":  "II",
+        "timePoint":  "12",
+        "CalcConc":  57.5025054594,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "013",
+        "period":  "II",
+        "timePoint":  "13",
+        "CalcConc":  41.4971741465,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "013",
+        "period":  "II",
+        "timePoint":  "14",
+        "CalcConc":  19.1682604382,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "013",
+        "period":  "II",
+        "timePoint":  "15",
+        "CalcConc":  4.783209491,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "013",
+        "period":  "II",
+        "timePoint":  "16",
+        "CalcConc":  0,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "013",
+        "period":  "II",
+        "timePoint":  "17",
+        "CalcConc":  0,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "014",
+        "period":  "I",
+        "timePoint":  "0",
+        "CalcConc":  0,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "014",
+        "period":  "I",
+        "timePoint":  "1",
+        "CalcConc":  4.0619080722,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "014",
+        "period":  "I",
+        "timePoint":  "2",
+        "CalcConc":  18.8576056273,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "014",
+        "period":  "I",
+        "timePoint":  "3",
+        "CalcConc":  51.1014664293,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "014",
+        "period":  "I",
+        "timePoint":  "4",
+        "CalcConc":  93.0488491248,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "014",
+        "period":  "I",
+        "timePoint":  "5",
+        "CalcConc":  94.2517862167,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "014",
+        "period":  "I",
+        "timePoint":  "6",
+        "CalcConc":  99.6194195414,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "014",
+        "period":  "I",
+        "timePoint":  "7",
+        "CalcConc":  111.069638994,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "014",
+        "period":  "I",
+        "timePoint":  "8",
+        "CalcConc":  114.5539187163,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "014",
+        "period":  "I",
+        "timePoint":  "9",
+        "CalcConc":  111.3788487349,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "014",
+        "period":  "I",
+        "timePoint":  "10",
+        "CalcConc":  109.0412717329,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "014",
+        "period":  "I",
+        "timePoint":  "11",
+        "CalcConc":  72.084068308,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "014",
+        "period":  "I",
+        "timePoint":  "12",
+        "CalcConc":  52.0120499935,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "014",
+        "period":  "I",
+        "timePoint":  "13",
+        "CalcConc":  32.6416792643,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "014",
+        "period":  "I",
+        "timePoint":  "14",
+        "CalcConc":  18.761556933,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "014",
+        "period":  "I",
+        "timePoint":  "15",
+        "CalcConc":  5.3133122842,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "014",
+        "period":  "I",
+        "timePoint":  "16",
+        "CalcConc":  0,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "014",
+        "period":  "I",
+        "timePoint":  "17",
+        "CalcConc":  0,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "014",
+        "period":  "II",
+        "timePoint":  "0",
+        "CalcConc":  0,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "014",
+        "period":  "II",
+        "timePoint":  "1",
+        "CalcConc":  9.3668791072,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "014",
+        "period":  "II",
+        "timePoint":  "2",
+        "CalcConc":  51.6616161055,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "014",
+        "period":  "II",
+        "timePoint":  "3",
+        "CalcConc":  99.1060848474,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "014",
+        "period":  "II",
+        "timePoint":  "4",
+        "CalcConc":  93.108850371,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "014",
+        "period":  "II",
+        "timePoint":  "5",
+        "CalcConc":  106.6843757307,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "014",
+        "period":  "II",
+        "timePoint":  "6",
+        "CalcConc":  110.931401304,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "014",
+        "period":  "II",
+        "timePoint":  "7",
+        "CalcConc":  108.7471955761,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "014",
+        "period":  "II",
+        "timePoint":  "8",
+        "CalcConc":  134.2685905974,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "014",
+        "period":  "II",
+        "timePoint":  "9",
+        "CalcConc":  95.2378438501,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "014",
+        "period":  "II",
+        "timePoint":  "10",
+        "CalcConc":  79.8149330334,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "014",
+        "period":  "II",
+        "timePoint":  "11",
+        "CalcConc":  54.7690982231,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "014",
+        "period":  "II",
+        "timePoint":  "12",
+        "CalcConc":  36.2473668976,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "014",
+        "period":  "II",
+        "timePoint":  "13",
+        "CalcConc":  27.8183483081,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "014",
+        "period":  "II",
+        "timePoint":  "14",
+        "CalcConc":  12.4412039167,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "014",
+        "period":  "II",
+        "timePoint":  "15",
+        "CalcConc":  3.0139547411,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "014",
+        "period":  "II",
+        "timePoint":  "16",
+        "CalcConc":  0,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "014",
+        "period":  "II",
+        "timePoint":  "17",
+        "CalcConc":  0,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "015",
+        "period":  "I",
+        "timePoint":  "0",
+        "CalcConc":  0,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "015",
+        "period":  "I",
+        "timePoint":  "1",
+        "CalcConc":  3.5584950175,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "015",
+        "period":  "I",
+        "timePoint":  "2",
+        "CalcConc":  15.9265277902,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "015",
+        "period":  "I",
+        "timePoint":  "3",
+        "CalcConc":  30.1849500704,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "015",
+        "period":  "I",
+        "timePoint":  "4",
+        "CalcConc":  55.2916892956,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "015",
+        "period":  "I",
+        "timePoint":  "5",
+        "CalcConc":  59.815956841,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "015",
+        "period":  "I",
+        "timePoint":  "6",
+        "CalcConc":  62.7930522283,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "015",
+        "period":  "I",
+        "timePoint":  "7",
+        "CalcConc":  81.1888201476,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "015",
+        "period":  "I",
+        "timePoint":  "8",
+        "CalcConc":  70.7883647693,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "015",
+        "period":  "I",
+        "timePoint":  "9",
+        "CalcConc":  69.7185723768,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "015",
+        "period":  "I",
+        "timePoint":  "10",
+        "CalcConc":  65.0012558113,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "015",
+        "period":  "I",
+        "timePoint":  "11",
+        "CalcConc":  67.1888583349,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "015",
+        "period":  "I",
+        "timePoint":  "12",
+        "CalcConc":  42.9842349159,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "015",
+        "period":  "I",
+        "timePoint":  "13",
+        "CalcConc":  33.6430026527,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "015",
+        "period":  "I",
+        "timePoint":  "14",
+        "CalcConc":  20.3613023249,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "015",
+        "period":  "I",
+        "timePoint":  "15",
+        "CalcConc":  6.8937871386,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "015",
+        "period":  "I",
+        "timePoint":  "16",
+        "CalcConc":  0,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "015",
+        "period":  "I",
+        "timePoint":  "17",
+        "CalcConc":  0,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "015",
+        "period":  "II",
+        "timePoint":  "0",
+        "CalcConc":  0,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "015",
+        "period":  "II",
+        "timePoint":  "1",
+        "CalcConc":  5.7400485133,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "015",
+        "period":  "II",
+        "timePoint":  "2",
+        "CalcConc":  19.4037627961,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "015",
+        "period":  "II",
+        "timePoint":  "3",
+        "CalcConc":  29.3399101246,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "015",
+        "period":  "II",
+        "timePoint":  "4",
+        "CalcConc":  55.6884403215,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "015",
+        "period":  "II",
+        "timePoint":  "5",
+        "CalcConc":  69.3249978615,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "015",
+        "period":  "II",
+        "timePoint":  "6",
+        "CalcConc":  77.6090688779,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "015",
+        "period":  "II",
+        "timePoint":  "7",
+        "CalcConc":  81.7558339064,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "015",
+        "period":  "II",
+        "timePoint":  "8",
+        "CalcConc":  91.73243879,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "015",
+        "period":  "II",
+        "timePoint":  "9",
+        "CalcConc":  105.0941642764,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "015",
+        "period":  "II",
+        "timePoint":  "10",
+        "CalcConc":  65.3781459357,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "015",
+        "period":  "II",
+        "timePoint":  "11",
+        "CalcConc":  67.73141164,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "015",
+        "period":  "II",
+        "timePoint":  "12",
+        "CalcConc":  51.1252087537,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "015",
+        "period":  "II",
+        "timePoint":  "13",
+        "CalcConc":  38.0809581038,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "015",
+        "period":  "II",
+        "timePoint":  "14",
+        "CalcConc":  23.4833144454,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "015",
+        "period":  "II",
+        "timePoint":  "15",
+        "CalcConc":  8.8611706821,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "015",
+        "period":  "II",
+        "timePoint":  "16",
+        "CalcConc":  2.1128654632,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "015",
+        "period":  "II",
+        "timePoint":  "17",
+        "CalcConc":  0,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "016",
+        "period":  "I",
+        "timePoint":  "0",
+        "CalcConc":  0,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "016",
+        "period":  "I",
+        "timePoint":  "1",
+        "CalcConc":  5.084982361,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "016",
+        "period":  "I",
+        "timePoint":  "2",
+        "CalcConc":  15.5381733538,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "016",
+        "period":  "I",
+        "timePoint":  "3",
+        "CalcConc":  33.1109085263,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "016",
+        "period":  "I",
+        "timePoint":  "4",
+        "CalcConc":  50.308810444,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "016",
+        "period":  "I",
+        "timePoint":  "5",
+        "CalcConc":  67.4831778955,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "016",
+        "period":  "I",
+        "timePoint":  "6",
+        "CalcConc":  76.2045188781,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "016",
+        "period":  "I",
+        "timePoint":  "7",
+        "CalcConc":  74.5514410922,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "016",
+        "period":  "I",
+        "timePoint":  "8",
+        "CalcConc":  69.515261714,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "016",
+        "period":  "I",
+        "timePoint":  "9",
+        "CalcConc":  79.7020036702,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "016",
+        "period":  "I",
+        "timePoint":  "10",
+        "CalcConc":  79.7422930659,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "016",
+        "period":  "I",
+        "timePoint":  "11",
+        "CalcConc":  53.8639041137,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "016",
+        "period":  "I",
+        "timePoint":  "12",
+        "CalcConc":  44.3137954839,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "016",
+        "period":  "I",
+        "timePoint":  "13",
+        "CalcConc":  30.5394416471,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "016",
+        "period":  "I",
+        "timePoint":  "14",
+        "CalcConc":  22.8100926468,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "016",
+        "period":  "I",
+        "timePoint":  "15",
+        "CalcConc":  6.7551636262,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "016",
+        "period":  "I",
+        "timePoint":  "16",
+        "CalcConc":  0,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "016",
+        "period":  "I",
+        "timePoint":  "17",
+        "CalcConc":  0,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "016",
+        "period":  "II",
+        "timePoint":  "0",
+        "CalcConc":  0,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "016",
+        "period":  "II",
+        "timePoint":  "1",
+        "CalcConc":  6.3456668617,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "016",
+        "period":  "II",
+        "timePoint":  "2",
+        "CalcConc":  38.7939518999,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "016",
+        "period":  "II",
+        "timePoint":  "3",
+        "CalcConc":  76.6150367459,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "016",
+        "period":  "II",
+        "timePoint":  "4",
+        "CalcConc":  89.4880313315,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "016",
+        "period":  "II",
+        "timePoint":  "5",
+        "CalcConc":  98.5601998245,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "016",
+        "period":  "II",
+        "timePoint":  "6",
+        "CalcConc":  135.1656023498,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "016",
+        "period":  "II",
+        "timePoint":  "7",
+        "CalcConc":  110.4705149636,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "016",
+        "period":  "II",
+        "timePoint":  "8",
+        "CalcConc":  102.7235862964,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "016",
+        "period":  "II",
+        "timePoint":  "9",
+        "CalcConc":  88.6455573369,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "016",
+        "period":  "II",
+        "timePoint":  "10",
+        "CalcConc":  75.1555365709,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "016",
+        "period":  "II",
+        "timePoint":  "11",
+        "CalcConc":  72.1374941156,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "016",
+        "period":  "II",
+        "timePoint":  "12",
+        "CalcConc":  35.9193499044,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "016",
+        "period":  "II",
+        "timePoint":  "13",
+        "CalcConc":  24.5186781942,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "016",
+        "period":  "II",
+        "timePoint":  "14",
+        "CalcConc":  13.7165742595,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "016",
+        "period":  "II",
+        "timePoint":  "15",
+        "CalcConc":  3.0631635755,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "016",
+        "period":  "II",
+        "timePoint":  "16",
+        "CalcConc":  0,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "016",
+        "period":  "II",
+        "timePoint":  "17",
+        "CalcConc":  0,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "017",
+        "period":  "I",
+        "timePoint":  "0",
+        "CalcConc":  0,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "017",
+        "period":  "I",
+        "timePoint":  "1",
+        "CalcConc":  12.4909852737,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "017",
+        "period":  "I",
+        "timePoint":  "2",
+        "CalcConc":  30.351941564,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "017",
+        "period":  "I",
+        "timePoint":  "3",
+        "CalcConc":  49.8794021662,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "017",
+        "period":  "I",
+        "timePoint":  "4",
+        "CalcConc":  97.1288634443,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "017",
+        "period":  "I",
+        "timePoint":  "5",
+        "CalcConc":  114.8790300328,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "017",
+        "period":  "I",
+        "timePoint":  "6",
+        "CalcConc":  111.2476383505,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "017",
+        "period":  "I",
+        "timePoint":  "7",
+        "CalcConc":  119.9897892209,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "017",
+        "period":  "I",
+        "timePoint":  "8",
+        "CalcConc":  124.1066565855,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "017",
+        "period":  "I",
+        "timePoint":  "9",
+        "CalcConc":  121.2910282115,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "017",
+        "period":  "I",
+        "timePoint":  "10",
+        "CalcConc":  128.5319118569,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "017",
+        "period":  "I",
+        "timePoint":  "11",
+        "CalcConc":  85.2358334231,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "017",
+        "period":  "I",
+        "timePoint":  "12",
+        "CalcConc":  55.0582659951,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "017",
+        "period":  "I",
+        "timePoint":  "13",
+        "CalcConc":  49.2251842638,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "017",
+        "period":  "I",
+        "timePoint":  "14",
+        "CalcConc":  25.4326637798,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "017",
+        "period":  "I",
+        "timePoint":  "15",
+        "CalcConc":  6.3261235347,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "017",
+        "period":  "I",
+        "timePoint":  "16",
+        "CalcConc":  0,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "017",
+        "period":  "I",
+        "timePoint":  "17",
+        "CalcConc":  0,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "017",
+        "period":  "II",
+        "timePoint":  "0",
+        "CalcConc":  0,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "017",
+        "period":  "II",
+        "timePoint":  "1",
+        "CalcConc":  6.3526673099,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "017",
+        "period":  "II",
+        "timePoint":  "2",
+        "CalcConc":  75.9492676131,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "017",
+        "period":  "II",
+        "timePoint":  "3",
+        "CalcConc":  89.3185969212,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "017",
+        "period":  "II",
+        "timePoint":  "4",
+        "CalcConc":  120.8320030305,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "017",
+        "period":  "II",
+        "timePoint":  "5",
+        "CalcConc":  118.8028794295,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "017",
+        "period":  "II",
+        "timePoint":  "6",
+        "CalcConc":  124.2762235428,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "017",
+        "period":  "II",
+        "timePoint":  "7",
+        "CalcConc":  138.4351356611,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "017",
+        "period":  "II",
+        "timePoint":  "8",
+        "CalcConc":  130.1527168894,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "017",
+        "period":  "II",
+        "timePoint":  "9",
+        "CalcConc":  107.4045002924,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "017",
+        "period":  "II",
+        "timePoint":  "10",
+        "CalcConc":  79.1768129627,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "017",
+        "period":  "II",
+        "timePoint":  "11",
+        "CalcConc":  83.6393826848,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "017",
+        "period":  "II",
+        "timePoint":  "12",
+        "CalcConc":  40.4473144165,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "017",
+        "period":  "II",
+        "timePoint":  "13",
+        "CalcConc":  34.7837309144,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "017",
+        "period":  "II",
+        "timePoint":  "14",
+        "CalcConc":  15.5539071802,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "017",
+        "period":  "II",
+        "timePoint":  "15",
+        "CalcConc":  3.3218512457,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "017",
+        "period":  "II",
+        "timePoint":  "16",
+        "CalcConc":  0,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "017",
+        "period":  "II",
+        "timePoint":  "17",
+        "CalcConc":  0,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "018",
+        "period":  "I",
+        "timePoint":  "0",
+        "CalcConc":  0,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "018",
+        "period":  "I",
+        "timePoint":  "1",
+        "CalcConc":  6.3747486675,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "018",
+        "period":  "I",
+        "timePoint":  "2",
+        "CalcConc":  39.0072053849,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "018",
+        "period":  "I",
+        "timePoint":  "3",
+        "CalcConc":  79.1308093161,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "018",
+        "period":  "I",
+        "timePoint":  "4",
+        "CalcConc":  102.7216324547,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "018",
+        "period":  "I",
+        "timePoint":  "5",
+        "CalcConc":  115.7217347574,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "018",
+        "period":  "I",
+        "timePoint":  "6",
+        "CalcConc":  135.5164838609,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "018",
+        "period":  "I",
+        "timePoint":  "7",
+        "CalcConc":  119.9630490797,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "018",
+        "period":  "I",
+        "timePoint":  "8",
+        "CalcConc":  111.6518774152,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "018",
+        "period":  "I",
+        "timePoint":  "9",
+        "CalcConc":  94.5688496125,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "018",
+        "period":  "I",
+        "timePoint":  "10",
+        "CalcConc":  80.5418905425,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "018",
+        "period":  "I",
+        "timePoint":  "11",
+        "CalcConc":  77.0518431131,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "018",
+        "period":  "I",
+        "timePoint":  "12",
+        "CalcConc":  38.8647860282,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "018",
+        "period":  "I",
+        "timePoint":  "13",
+        "CalcConc":  34.9598810421,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "018",
+        "period":  "I",
+        "timePoint":  "14",
+        "CalcConc":  14.1775238274,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "018",
+        "period":  "I",
+        "timePoint":  "15",
+        "CalcConc":  3.3930977427,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "018",
+        "period":  "I",
+        "timePoint":  "16",
+        "CalcConc":  0,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "018",
+        "period":  "I",
+        "timePoint":  "17",
+        "CalcConc":  0,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "018",
+        "period":  "II",
+        "timePoint":  "0",
+        "CalcConc":  0,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "018",
+        "period":  "II",
+        "timePoint":  "1",
+        "CalcConc":  14.3316171433,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "018",
+        "period":  "II",
+        "timePoint":  "2",
+        "CalcConc":  37.5099440265,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "018",
+        "period":  "II",
+        "timePoint":  "3",
+        "CalcConc":  62.9753408992,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "018",
+        "period":  "II",
+        "timePoint":  "4",
+        "CalcConc":  86.7165165812,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "018",
+        "period":  "II",
+        "timePoint":  "5",
+        "CalcConc":  102.2936625579,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "018",
+        "period":  "II",
+        "timePoint":  "6",
+        "CalcConc":  109.7078244782,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "018",
+        "period":  "II",
+        "timePoint":  "7",
+        "CalcConc":  121.9820205581,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "018",
+        "period":  "II",
+        "timePoint":  "8",
+        "CalcConc":  109.5845851714,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "018",
+        "period":  "II",
+        "timePoint":  "9",
+        "CalcConc":  112.4104245778,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "018",
+        "period":  "II",
+        "timePoint":  "10",
+        "CalcConc":  110.4496019837,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "018",
+        "period":  "II",
+        "timePoint":  "11",
+        "CalcConc":  74.6006062315,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "018",
+        "period":  "II",
+        "timePoint":  "12",
+        "CalcConc":  54.2716777665,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "018",
+        "period":  "II",
+        "timePoint":  "13",
+        "CalcConc":  32.7774348619,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "018",
+        "period":  "II",
+        "timePoint":  "14",
+        "CalcConc":  22.306983297,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "018",
+        "period":  "II",
+        "timePoint":  "15",
+        "CalcConc":  6.4812330447,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "018",
+        "period":  "II",
+        "timePoint":  "16",
+        "CalcConc":  2.1619319622,
+        "CalcUnit":  null
+    },
+    {
+        "randNum":  "018",
+        "period":  "II",
+        "timePoint":  "17",
+        "CalcConc":  0,
+        "CalcUnit":  null
+    }
+]

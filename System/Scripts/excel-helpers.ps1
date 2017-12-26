@@ -1,5 +1,5 @@
-﻿# импорт диапазонов нормальных данных из Normal concenrations blood.xlsx
-function Import-Normal-Ranges () {
+﻿# импорт диапазонов нормальных данных для биожидкости из Normal concenrations blood.xlsx
+function Import-BioFluid-Ranges () {
   [CmdletBinding()]
   Param(
       [Parameter(Mandatory = $True)] [string]$Path,   # путь к файлу с данными
