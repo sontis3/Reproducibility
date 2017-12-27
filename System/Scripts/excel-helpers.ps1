@@ -14,7 +14,7 @@ function Import-BioFluid-Ranges () {
 
   for ($i = 1; $i -le $sheet.Dimension.Rows; $i++) {
     # $qwe = $sheet.Cells[$i, 2].Value
-    if ($sheet.Cells[$i, 3].Value -and $sheet.Cells[$i, 3].Value.GetType().Name -eq "Double" ) {
+    if (($sheet.Cells[$i, 3].Value -ge 0.0) -and $sheet.Cells[$i, 3].Value.GetType().Name -eq "Double" ) { # $sheet.Cells[$i, 3].Value -and 
       $item = [PSCustomObject]@{
         type = $sheet.Cells[$i, 1].Value;
         name = $sheet.Cells[$i, 2].Value;

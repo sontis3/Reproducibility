@@ -52,29 +52,3 @@ function Get-XmlData () {
     $result
 }
 
-#-----------------------------------------------------------------------------------------------
-function Import-XmlDataMult() {
-    [CmdletBinding()]
-    Param(
-        [Parameter(Mandatory=$True)] [string]$Path,                        # каталог с исходными файлами
-        [Parameter(Mandatory=$True)] [string]$tmpPath,                     # каталог временных(результат) файлов
-        [Parameter(Mandatory=$True)]  [string]$Format,                     # формат данных
-        [Parameter(Mandatory=$True)]  [System.Object]$fields
-    )
-
-    Write-Host '-------------- start job (Load from multiple xml to stage)---------------'
-    # удаление старых файлов
-    $tmpFilePath = Join-Path -Path $tmpPath -ChildPath '*.rem'
-    if(Test-Path $tmpFilePath){
-        Remove-Item $tmpFilePath
-    }
-
-    $xmlInput = @()
-    Get-ChildItem -Path $Path -Filter *.xml |
-        ForEach-Object {
-            $xmlInput += Get-XmlData -FilePath $_.FullName -Format $Format -Filter " " -fields $fields
-        }
-
-    Write-Host '-------------- end job (Load from multiple xml to stage)---------------'
-}
-

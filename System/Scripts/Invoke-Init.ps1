@@ -30,7 +30,7 @@ $EpPlusPath = Split-Path -Parent $scriptPath | Join-Path -ChildPath "packages\EP
 
 . .\excel-helpers.ps1
 
-$BioFluidNames = @("Blood Serum", "Лист2")
+$BioFluidNames = @("Serum", "Saliva", "Urine")
 
 # загрузка диапазонов по всем жидкостям
 function Import-Norm-Ranges () {
