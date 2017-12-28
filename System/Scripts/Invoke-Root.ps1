@@ -54,19 +54,19 @@ function Process-Data() {
 function Process-XmlDataMult() {
   [CmdletBinding()]
   Param(
-      [Parameter(Mandatory=$True)] [string]$Path,                        # каталог с исходными файлами
-      [Parameter(Mandatory=$True)] [string]$tmpPath,                     # каталог временных(результат) файлов
-      [Parameter(Mandatory=$True)] [string]$Format,                      # формат данных
-      [Parameter(Mandatory=$True)] [System.Object[]]$fields,
-      [Parameter(Mandatory=$True)] [System.Object]$ranges,
-      [Parameter(Mandatory=$True)] [System.Object[]]$stopList
+      [Parameter(Mandatory=$True)] [string]$Path,                       # каталог с исходными файлами
+      [Parameter(Mandatory=$True)] [string]$tmpPath,                    # каталог временных(результат) файлов
+      [Parameter(Mandatory=$True)] [string]$Format,                     # формат данных
+      [Parameter(Mandatory=$True)] [System.Object[]]$fields,            # представление данных in/out
+      [Parameter(Mandatory=$True)] [System.Object]$ranges,              # диапазоны
+      [Parameter(Mandatory=$True)] [System.Object[]]$stopList           # неучитываемые параметры
   )
 
   Write-Host '-------------- start job (Load from multiple xml to stage)---------------'
   # удаление старых файлов
-  $tmpFilePath = Join-Path -Path $tmpPath -ChildPath '*.rem'
+  $tmpFilePath = Join-Path -Path $tmpPath -ChildPath '*.*'
   if(Test-Path $tmpFilePath){
-      Remove-Item $tmpFilePath
+    Remove-Item $tmpFilePath
   }
 
   Get-ChildItem -Path $Path -Filter *.xml |
@@ -85,6 +85,11 @@ function Process-XmlDataMult() {
             $inData = Get-XmlData -FilePath $_.FullName -Format $Format -Filter " " -fields ($fields  | Select-Object -ExpandProperty "in")
 
             $outData = Process-Data -ranges $ranges.$selFluidName -stopList $stopList -indata $inData
+
+            $fileName = ($_ | Select-Object -ExpandProperty BaseName) + ".xlsx"
+            $ExcelPath = Join-Path -Path $tmpPath -ChildPath $fileName
+
+            Export-ExcelData -Path $ExcelPath -outData $outData
           }
       }
 

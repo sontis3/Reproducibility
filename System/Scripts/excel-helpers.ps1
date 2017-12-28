@@ -89,3 +89,45 @@ function Import-StopList () {
 
   $tableData
 }
+
+# Вывод результатов в Excel
+function Export-ExcelData() {
+  [CmdletBinding()]
+  Param(
+      [Parameter(Mandatory = $True)] [string]$Path,
+      [Parameter(Mandatory = $False)] [System.Object]$outData
+  )
+
+  $excel = New-Object OfficeOpenXml.ExcelPackage -ArgumentList $Path
+  $wBook = $excel.Workbook
+
+  $wSheets = $wBook.Worksheets     
+  $sheet = $wSheets.Add("Результаты")
+  $rowNumber = $sheet.Dimension.End.Row + 1
+
+  foreach ($item in $outData) {
+      $colNumber = 1
+      $item.PSObject.Properties | ForEach-Object {
+          $sheet.Cells[$rowNumber, $colNumber].Value = $_.value
+          if ($colNumber -eq 6) {
+            switch ($_.value) {
+              "Low" { $sheet.Cells[$rowNumber, $colNumber].Value = "-" }
+              "Norm" { $sheet.Cells[$rowNumber, $colNumber].Value = "" }
+              "High" { $sheet.Cells[$rowNumber, $colNumber].Value = "+" }
+              Default {$sheet.Cells[$rowNumber, $colNumber].Value = $_.value}
+            }
+          }
+          # if ($_.value -eq "Failed") {
+          #     $sheet.Cells[$rowNumber, $colNumber].Style.Font.Color.SetColor("Red")
+          # }
+          $colNumber++
+      }
+      $rowNumber++
+  }
+  for ($i = 1; $i -lt $colNumber; $i++) {
+      $sheet.Column($i).AutoFit()
+  }
+  
+  $excel.Save()
+  $excel.Dispose()
+}
