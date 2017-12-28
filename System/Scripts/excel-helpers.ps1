@@ -1,4 +1,12 @@
-﻿# импорт диапазонов нормальных данных для биожидкости из Normal concenrations blood.xlsx
+﻿Add-Type -TypeDefinition @'
+    public enum AmountLevel {
+        Low,
+        Norm,
+        High
+    };
+'@
+
+# импорт диапазонов нормальных данных для биожидкости из Normal concentrations blood.xlsx
 function Import-BioFluid-Ranges () {
   [CmdletBinding()]
   Param(
@@ -12,9 +20,8 @@ function Import-BioFluid-Ranges () {
 
   $tableData = @()
 
-  for ($i = 1; $i -le $sheet.Dimension.Rows; $i++) {
-    # $qwe = $sheet.Cells[$i, 2].Value
-    if (($sheet.Cells[$i, 3].Value -ge 0.0) -and $sheet.Cells[$i, 3].Value.GetType().Name -eq "Double" ) { # $sheet.Cells[$i, 3].Value -and 
+  for ($i = $sheet.Dimension.Start.Row; $i -le $sheet.Dimension.End.Row; $i++) {
+    if (($sheet.Cells[$i, 3].Value -ge 0.0) -and $sheet.Cells[$i, 3].Value.GetType().Name -eq "Double") {
       $item = [PSCustomObject]@{
         type = $sheet.Cells[$i, 1].Value;
         name = $sheet.Cells[$i, 2].Value;
@@ -51,5 +58,34 @@ function Import-BioFluid-Ranges () {
   #         values = $timeSlice
   #     }
   # }
+  $tableData
+}
+
+# импорт стоплиста из Normal concentrations blood.xlsx
+function Import-StopList () {
+  [CmdletBinding()]
+  Param(
+      [Parameter(Mandatory = $True)] [string]$Path,   # путь к файлу с данными
+      [Parameter(Mandatory = $True)] [string]$Name    # имя страницы
+  )
+  $excel = New-Object OfficeOpenXml.ExcelPackage -ArgumentList $Path
+  $wBook = $excel.Workbook
+  $wSheets = $wBook.Worksheets
+  $sheet = $wSheets[$Name]
+
+  $tableData = @()
+
+  for ($i = $sheet.Dimension.Start.Row; $i -le $sheet.Dimension.End.Row; $i++) {
+    if ($sheet.Cells[$i, 2].Value) {
+      $item = [PSCustomObject]@{
+        type = $sheet.Cells[$i, 1].Value;
+        name = $sheet.Cells[$i, 2].Value;
+      }
+      $tableData += $item
+    }
+  }
+  
+  $excel.Dispose()
+
   $tableData
 }

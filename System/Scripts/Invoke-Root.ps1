@@ -19,17 +19,36 @@ function Process-Data() {
   [CmdletBinding()]
   Param(
       [Parameter(Mandatory=$True)] [System.Object[]]$ranges,
-      [Parameter(Mandatory=$True)] [System.Object[]]$indata
+      [Parameter(Mandatory=$True)] [System.Object[]]$stopList,
+      [Parameter(Mandatory=$True)] [System.Object[]]$inData
   )
+  $result = @()
+
   foreach ($item in $inData) {
     $rng = $ranges.Where({$_.name -eq $item.Peak_Name})
     if ($rng) {
-      
-    } else {
+      $amount = [Double]$item.Amount
+      if ($amount -lt $rng[0].lowConc) {
+        $level = [AmountLevel]::Low
+      } elseif ($amount -gt $rng[0].highConc) {
+        $level = [AmountLevel]::High
+      } else {
+        $level = [AmountLevel]::Norm
+      }
+      $result += [PSCustomObject]@{
+        type = $rng[0].type;
+        name = $rng[0].name;
+        lowConc = $rng[0].lowConc;
+        highConc = $rng[0].highConc;
+        amount = $amount;
+        level = $level;
+      }
+    } elseif (!$stopList.Where({$_.name -eq $item.Peak_Name})) {
       Write-Warning ("Не найден диапазон для " + $item.Peak_Name)
     }
   }
 
+  $result
 }
 
 function Process-XmlDataMult() {
@@ -38,8 +57,9 @@ function Process-XmlDataMult() {
       [Parameter(Mandatory=$True)] [string]$Path,                        # каталог с исходными файлами
       [Parameter(Mandatory=$True)] [string]$tmpPath,                     # каталог временных(результат) файлов
       [Parameter(Mandatory=$True)] [string]$Format,                      # формат данных
-      [Parameter(Mandatory=$True)] [System.Object]$fields,
-      [Parameter(Mandatory=$True)] [System.Object]$ranges
+      [Parameter(Mandatory=$True)] [System.Object[]]$fields,
+      [Parameter(Mandatory=$True)] [System.Object]$ranges,
+      [Parameter(Mandatory=$True)] [System.Object[]]$stopList
   )
 
   Write-Host '-------------- start job (Load from multiple xml to stage)---------------'
@@ -64,7 +84,7 @@ function Process-XmlDataMult() {
           if ($selFluidName -and $ranges.$selFluidName) {
             $inData = Get-XmlData -FilePath $_.FullName -Format $Format -Filter " " -fields ($fields  | Select-Object -ExpandProperty "in")
 
-            Process-Data -ranges $ranges.$selFluidName -indata $inData
+            $outData = Process-Data -ranges $ranges.$selFluidName -stopList $stopList -indata $inData
           }
       }
 
@@ -73,6 +93,7 @@ function Process-XmlDataMult() {
 #--------------------------------------------------------------------------------------------------
 
 $ranges = Import-Norm-Ranges
+$stopList = Import-StopList -Path $normPath -Name $StopListName
 
 $fields = @(
   [PSCustomObject]@{in = "Number"; out = "Number"; },
@@ -81,7 +102,7 @@ $fields = @(
 )
 
 
-Process-XmlDataMult -Path $inPath -tmpPath $tmpPath -Format "AlexPasha" -fields $fields -ranges $ranges
+Process-XmlDataMult -Path $inPath -tmpPath $tmpPath -Format "AlexPasha" -fields $fields -ranges $ranges -stopList $stopList
 
 $qwe = 123
 
