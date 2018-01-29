@@ -18,16 +18,38 @@ if (!$inPath) {
 function Process-Data() {
   [CmdletBinding()]
   Param(
-      [Parameter(Mandatory=$True)] [System.Object[]]$ranges,
-      [Parameter(Mandatory=$True)] [System.Object[]]$stopList,
-      [Parameter(Mandatory=$True)] [System.Object[]]$inData
+    [Parameter(Mandatory=$True)] [string]$fluidName,
+    [Parameter(Mandatory=$True)] [System.Object[]]$ranges,
+    [Parameter(Mandatory=$True)] [System.Object[]]$stopList,
+    [Parameter(Mandatory=$True)] [System.Object[]]$inData
   )
   $result = @()
+
+  $urineFactor = "Creatinine 3TMS"
+  $urineFactorValue = 0.0
+  # поиск фактора для урины
+  if ($fluidName -eq "Urine") {
+    $item = $inData.Where({$_.Peak_Name -eq $urineFactor})
+    if ($item) {
+      $urineFactorValue = [Double]$item.Amount
+    }
+  }
 
   foreach ($item in $inData) {
     $rng = $ranges.Where({$_.name -eq $item.Peak_Name})
     if ($rng) {
-      $amount = [Double]$item.Amount
+      if ($fluidName -eq "Urine") {
+        if ($urineFactorValue -eq 0.0) {
+          Write-Error ("$urineFactor = $urineFactorValue")
+          $amount = 0.0
+        }
+        else {
+          $amount = [Double]$item.Amount / $urineFactorValue
+        }
+      }
+      else {
+        $amount = [Double]$item.Amount
+      }
       if ($amount -lt $rng[0].lowConc) {
         $level = [AmountLevel]::Low
       } elseif ($amount -gt $rng[0].highConc) {
@@ -84,7 +106,7 @@ function Process-XmlDataMult() {
           if ($selFluidName -and $ranges.$selFluidName) {
             $inData = Get-XmlData -FilePath $_.FullName -Format $Format -Filter " " -fields ($fields  | Select-Object -ExpandProperty "in")
 
-            $outData = Process-Data -ranges $ranges.$selFluidName -stopList $stopList -indata $inData
+            $outData = Process-Data -fluidName $selFluidName -ranges $ranges.$selFluidName -stopList $stopList -indata $inData
 
             $fileName = ($_ | Select-Object -ExpandProperty BaseName) + ".xlsx"
             $ExcelPath = Join-Path -Path $tmpPath -ChildPath $fileName

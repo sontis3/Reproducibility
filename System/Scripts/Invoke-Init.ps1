@@ -14,7 +14,7 @@ if (!$inPath) {
   $inPath = Split-Path -Parent $systemPath | Join-Path -ChildPath 'In-Data' 
 }
 
-$normPath = Split-Path -Parent $systemPath | Join-Path -ChildPath "Normal concentrations blood.xlsx" 
+$normPath = Split-Path -Parent $systemPath | Join-Path -ChildPath "Normal concentrations.xlsx" 
 
 $tmpPath = $inPath | Join-Path -ChildPath 'result'
 if ($isCleanStart -and (Test-Path $tmpPath)) {
@@ -30,8 +30,8 @@ $EpPlusPath = Split-Path -Parent $scriptPath | Join-Path -ChildPath "packages\EP
 
 . .\excel-helpers.ps1
 
-$BioFluidNames = @("Serum")
-# $BioFluidNames = @("Serum", "Saliva", "Urine")
+# $BioFluidNames = @("Serum")
+$BioFluidNames = @("Serum", "Saliva", "Urine")
 $StopListName = "Stop List"
 
 # загрузка диапазонов по всем жидкостям
