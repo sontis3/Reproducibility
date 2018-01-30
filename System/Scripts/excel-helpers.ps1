@@ -6,6 +6,33 @@
     };
 '@
 
+################################################################### From excel-common.ps1
+# формирование заголовка таблицы
+function Add-TableTitle ($sheet, $rowNumber, $colNumber, $titles) {
+  $i = $colNumber
+  foreach ($item in $titles) {
+      $sheet.Cells.Item($rowNumber, $i).Value = $item
+      $sheet.Cells[$rowNumber, $i].Style.Border.Left.Style = "Thin"
+      $i++
+  }
+
+  $sheet.Row($rowNumber).Style.HorizontalAlignment = "Center"
+  $sheet.Row($rowNumber).Style.Font.Bold = $true
+  $sheet.Row($rowNumber).Style.Border.Top.Style = $sheet.Row($rowNumber).Style.Border.Bottom.Style = "Thin"
+}
+
+# установить числовой формат столбцов из массива форматов начиная с n-го столбца
+function Set-NumFormatColumns2 ($sheet, $colNumber, $formats) {
+  $i = 0
+  foreach ($item in $formats) {
+      $sheet.Column($i + $colNumber).Style.Numberformat.Format = $item
+      $i++
+  }
+}
+
+
+#########################################################################################
+
 # импорт диапазонов нормальных данных для биожидкости из Normal concentrations blood.xlsx
 function Import-BioFluid-Ranges () {
   [CmdletBinding()]
@@ -94,8 +121,9 @@ function Import-StopList () {
 function Export-ExcelData() {
   [CmdletBinding()]
   Param(
-      [Parameter(Mandatory = $True)] [string]$Path,
-      [Parameter(Mandatory = $False)] [System.Object]$outData
+      [Parameter(Mandatory = $True)] [string]$Path,             # путь файла
+      [Parameter(Mandatory = $True)] [string[]]$dataInfo,         # жидкость пациент пол дата
+      [Parameter(Mandatory = $False)] [System.Object]$outData   # данные, экспортитруемые в Excel
   )
 
   $excel = New-Object OfficeOpenXml.ExcelPackage -ArgumentList $Path
@@ -104,6 +132,15 @@ function Export-ExcelData() {
   $wSheets = $wBook.Worksheets     
   $sheet = $wSheets.Add("Результаты")
   $rowNumber = $sheet.Dimension.End.Row + 1
+
+  Add-TableTitle $sheet $rowNumber 1 $dataInfo
+  $sheet.Row($rowNumber).Style.Fill.PatternType = [OfficeOpenXml.Style.ExcelFillStyle]::Solid
+  $sheet.Row($rowNumber).Style.Fill.BackgroundColor.SetColor([System.Drawing.Color]::LightGray)
+  $rowNumber = $rowNumber + 2
+
+  $tableTitles = "Класс", "Метаболит", "min", "max", "Величина", "Результат"
+  Add-TableTitle $sheet $rowNumber 1 $tableTitles
+  $rowNumber++
 
   foreach ($item in $outData) {
       $colNumber = 1
@@ -124,6 +161,11 @@ function Export-ExcelData() {
       }
       $rowNumber++
   }
+
+  Set-NumFormatColumns2 $sheet 3 "#0.000", "#0.000", "#0.000"
+  $sheet.Column(6).Style.HorizontalAlignment = "Center"
+  $sheet.Column(6).Style.Font.Bold = $true
+
   for ($i = 1; $i -lt $colNumber; $i++) {
       $sheet.Column($i).AutoFit()
   }

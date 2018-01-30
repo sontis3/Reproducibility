@@ -108,10 +108,12 @@ function Process-XmlDataMult() {
 
             $outData = Process-Data -fluidName $selFluidName -ranges $ranges.$selFluidName -stopList $stopList -indata $inData
 
-            $fileName = ($_ | Select-Object -ExpandProperty BaseName) + ".xlsx"
+            $baseName = $_ | Select-Object -ExpandProperty BaseName
+            $fileName = $baseName + ".xlsx"
             $ExcelPath = Join-Path -Path $tmpPath -ChildPath $fileName
+            $dataInfo = $baseName.Split("_")
 
-            Export-ExcelData -Path $ExcelPath -outData $outData
+            Export-ExcelData -Path $ExcelPath -dataInfo $dataInfo -outData $outData
           }
       }
 
