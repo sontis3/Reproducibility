@@ -122,7 +122,7 @@ function Export-ExcelData() {
   [CmdletBinding()]
   Param(
       [Parameter(Mandatory = $True)] [string]$Path,             # путь файла
-      [Parameter(Mandatory = $True)] [string[]]$dataInfo,         # жидкость пациент пол дата
+      [Parameter(Mandatory = $True)] [string[]]$dataInfo,       # жидкость пациент пол дата
       [Parameter(Mandatory = $False)] [System.Object]$outData   # данные, экспортитруемые в Excel
   )
 
@@ -138,8 +138,16 @@ function Export-ExcelData() {
   $sheet.Row($rowNumber).Style.Fill.BackgroundColor.SetColor([System.Drawing.Color]::LightGray)
   $rowNumber = $rowNumber + 2
 
-  $tableTitles = "Класс", "Метаболит", "min", "max", "Величина", "Результат"
-  Add-TableTitle $sheet $rowNumber 1 $tableTitles
+  $measureUnit = "uM/L"
+  if ($dataInfo[0] -eq "Urine") {
+    $measureUnit = "uM/mmol crea"
+  }
+  $tableTitles1 = "Класс", "Метаболит", "min", "max", "Результат", "Отклонение"
+  $tableTitles2 = $measureUnit, $measureUnit, $measureUnit
+
+  Add-TableTitle $sheet $rowNumber 1 $tableTitles1
+  $rowNumber++
+  Add-TableTitle $sheet $rowNumber 3 $tableTitles2
   $rowNumber++
 
   foreach ($item in $outData) {
@@ -148,9 +156,19 @@ function Export-ExcelData() {
           $sheet.Cells[$rowNumber, $colNumber].Value = $_.value
           if ($colNumber -eq 6) {
             switch ($_.value) {
-              "Low" { $sheet.Cells[$rowNumber, $colNumber].Value = "-" }
-              "Norm" { $sheet.Cells[$rowNumber, $colNumber].Value = "" }
-              "High" { $sheet.Cells[$rowNumber, $colNumber].Value = "+" }
+              "Low" { $sheet.Cells[$rowNumber, $colNumber].Value = "-"
+                      $sheet.Cells[$rowNumber, ($colNumber-1)].Style.Fill.PatternType = [OfficeOpenXml.Style.ExcelFillStyle]::Solid
+                      $sheet.Cells[$rowNumber, ($colNumber-1)].Style.Fill.BackgroundColor.SetColor([System.Drawing.Color]::LightBlue)
+                      $sheet.Cells[$rowNumber, $colNumber].Style.Fill.PatternType = [OfficeOpenXml.Style.ExcelFillStyle]::Solid
+                      $sheet.Cells[$rowNumber, $colNumber].Style.Fill.BackgroundColor.SetColor([System.Drawing.Color]::LightBlue)
+                    }
+              "Norm"  { $sheet.Cells[$rowNumber, $colNumber].Value = "" }
+              "High"  { $sheet.Cells[$rowNumber, $colNumber].Value = "+"
+                        $sheet.Cells[$rowNumber, ($colNumber-1)].Style.Fill.PatternType = [OfficeOpenXml.Style.ExcelFillStyle]::Solid
+                        $sheet.Cells[$rowNumber, ($colNumber-1)].Style.Fill.BackgroundColor.SetColor([System.Drawing.Color]::LightPink)
+                        $sheet.Cells[$rowNumber, $colNumber].Style.Fill.PatternType = [OfficeOpenXml.Style.ExcelFillStyle]::Solid
+                        $sheet.Cells[$rowNumber, $colNumber].Style.Fill.BackgroundColor.SetColor([System.Drawing.Color]::LightPink)
+                      }
               Default {$sheet.Cells[$rowNumber, $colNumber].Value = $_.value}
             }
           }
