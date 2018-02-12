@@ -25,7 +25,7 @@ function Process-Data() {
   )
   $result = @()
 
-  $urineFactor = "Creatinine 3TMS"
+  $urineFactor = "Creatinine"
   $urineFactorValue = 0.0
   # поиск фактора для урины
   if ($fluidName -eq "Urine") {
@@ -66,7 +66,7 @@ function Process-Data() {
         level = $level;
       }
     } elseif (!$stopList.Where({$_.name -eq $item.Peak_Name})) {
-      Write-Warning ("Не найден диапазон для " + $item.Peak_Name)
+      Write-Warning ($fluidName + ": Не найден диапазон для " + $item.Peak_Name)
     }
   }
 
@@ -93,7 +93,8 @@ function Process-XmlDataMult() {
 
   Get-ChildItem -Path $Path -Filter *.xml |
       ForEach-Object {
-          switch -regex ($_.Name) {
+        Write-Host '-------------- ' + $_.Name ' ---------------'
+        switch -regex ($_.Name) {
             $BioFluidNames[0] { $selFluidName = $BioFluidNames[0] }
             $BioFluidNames[1] { $selFluidName = $BioFluidNames[1] }
             $BioFluidNames[2] { $selFluidName = $BioFluidNames[2] }
