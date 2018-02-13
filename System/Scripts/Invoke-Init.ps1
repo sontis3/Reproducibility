@@ -14,8 +14,6 @@ if (!$inPath) {
   $inPath = Split-Path -Parent $systemPath | Join-Path -ChildPath 'In-Data' 
 }
 
-$normPath = Split-Path -Parent $systemPath | Join-Path -ChildPath "Normal concentrations.xlsx" 
-
 $tmpPath = $inPath | Join-Path -ChildPath 'result'
 if ($isCleanStart -and (Test-Path $tmpPath)) {
   Remove-Item $tmpPath -Recurse

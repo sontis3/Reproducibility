@@ -101,14 +101,15 @@ function Import-StopList () {
   $sheet = $wSheets[$Name]
 
   $tableData = @()
-
-  for ($i = $sheet.Dimension.Start.Row; $i -le $sheet.Dimension.End.Row; $i++) {
-    if ($sheet.Cells[$i, 2].Value) {
-      $item = [PSCustomObject]@{
-        type = $sheet.Cells[$i, 1].Value;
-        name = $sheet.Cells[$i, 2].Value;
+  if ($sheet) {
+    for ($i = $sheet.Dimension.Start.Row; $i -le $sheet.Dimension.End.Row; $i++) {
+      if ($sheet.Cells[$i, 2].Value) {
+        $item = [PSCustomObject]@{
+          type = $sheet.Cells[$i, 1].Value;
+          name = $sheet.Cells[$i, 2].Value;
+        }
+        $tableData += $item
       }
-      $tableData += $item
     }
   }
   

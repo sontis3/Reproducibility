@@ -6,8 +6,16 @@ Param(
 if (!$inPath) {
   $scriptPath = Split-Path $MyInvocation.MyCommand.path
   $systemPath = Split-Path -Parent $scriptPath
-  $inPath = Split-Path -Parent $systemPath | Join-Path -ChildPath 'In-Data\All'
+  # $inPath = Split-Path -Parent $systemPath | Join-Path -ChildPath 'In-Data\All'
+  # $inPath = Split-Path -Parent $systemPath | Join-Path -ChildPath 'In-Data\Amino Acids'
+  # $inPath = Split-Path -Parent $systemPath | Join-Path -ChildPath 'In-Data\Fatty Acids_All'
+  $inPath = Split-Path -Parent $systemPath | Join-Path -ChildPath 'In-Data\Fatty Acids_Free'
 }
+
+# $normPath = Split-Path -Parent $systemPath | Join-Path -ChildPath "Normal concentrations.xlsx" 
+# $normPath = Split-Path -Parent $systemPath | Join-Path -ChildPath "Amino acids Normal concentrations.xlsx" 
+# $normPath = Split-Path -Parent $systemPath | Join-Path -ChildPath "Fatty acids All Normal concentrations.xlsx" 
+$normPath = Split-Path -Parent $systemPath | Join-Path -ChildPath "Fatty acids Free Normal concerntrations.xlsx" 
 
 #-------------------------------------------------------------------------------
 # загрузка нормальных диапазонов
@@ -20,7 +28,7 @@ function Process-Data() {
   Param(
     [Parameter(Mandatory=$True)] [string]$fluidName,
     [Parameter(Mandatory=$True)] [System.Object[]]$ranges,
-    [Parameter(Mandatory=$True)] [System.Object[]]$stopList,
+    [Parameter(Mandatory=$False)] [System.Object[]]$stopList,
     [Parameter(Mandatory=$True)] [System.Object[]]$inData
   )
   $result = @()
@@ -65,7 +73,7 @@ function Process-Data() {
         amount = $amount;
         level = $level;
       }
-    } elseif (!$stopList.Where({$_.name -eq $item.Peak_Name})) {
+    } elseif (!$stopList -or !$stopList.Where({$_.name -eq $item.Peak_Name})) {
       Write-Warning ($fluidName + ": Не найден диапазон для " + $item.Peak_Name)
     }
   }
@@ -81,7 +89,7 @@ function Process-XmlDataMult() {
       [Parameter(Mandatory=$True)] [string]$Format,                     # формат данных
       [Parameter(Mandatory=$True)] [System.Object[]]$fields,            # представление данных in/out
       [Parameter(Mandatory=$True)] [System.Object]$ranges,              # диапазоны
-      [Parameter(Mandatory=$True)] [System.Object[]]$stopList           # неучитываемые параметры
+      [Parameter(Mandatory=$False)] [System.Object[]]$stopList           # неучитываемые параметры
   )
 
   Write-Host '-------------- start job (Load from multiple xml to stage)---------------'
