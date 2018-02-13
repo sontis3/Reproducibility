@@ -6,7 +6,7 @@ Param(
 if (!$inPath) {
   $scriptPath = Split-Path $MyInvocation.MyCommand.path
   $systemPath = Split-Path -Parent $scriptPath
-  $inPath = Split-Path -Parent $systemPath | Join-Path -ChildPath 'In-Data'
+  $inPath = Split-Path -Parent $systemPath | Join-Path -ChildPath 'In-Data\All'
 }
 
 #-------------------------------------------------------------------------------
@@ -93,7 +93,7 @@ function Process-XmlDataMult() {
 
   Get-ChildItem -Path $Path -Filter *.xml |
       ForEach-Object {
-        Write-Host '-------------- ' + $_.Name ' ---------------'
+        Write-Host '-------------- ' + $_.Name + ' ---------------'
         switch -regex ($_.Name) {
             $BioFluidNames[0] { $selFluidName = $BioFluidNames[0] }
             $BioFluidNames[1] { $selFluidName = $BioFluidNames[1] }
