@@ -14,7 +14,7 @@ if (!$inPath) {
   $inPath = 'z:\UBUNTU\02 - Проекты в работе\32 - Воспроизводимость после хранения\Павел Prostate Cancer\All'
 }
 
-$normPath = Split-Path -Parent $systemPath | Join-Path -ChildPath "Normal concentrations.xlsx" 
+$normPath = Split-Path -Parent $systemPath | Join-Path -ChildPath "Normal concentrations.xlsx"
 # $normPath = Split-Path -Parent $systemPath | Join-Path -ChildPath "Amino acids Normal concentrations.xlsx" 
 # $normPath = Split-Path -Parent $systemPath | Join-Path -ChildPath "Fatty acids All Normal concentrations.xlsx" 
 # $normPath = Split-Path -Parent $systemPath | Join-Path -ChildPath "Fatty acids Free Normal concerntrations.xlsx" 
