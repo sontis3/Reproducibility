@@ -9,13 +9,15 @@ if (!$inPath) {
   # $inPath = Split-Path -Parent $systemPath | Join-Path -ChildPath 'In-Data\All'
   # $inPath = Split-Path -Parent $systemPath | Join-Path -ChildPath 'In-Data\Amino Acids'
   # $inPath = Split-Path -Parent $systemPath | Join-Path -ChildPath 'In-Data\Fatty Acids_All'
-  $inPath = Split-Path -Parent $systemPath | Join-Path -ChildPath 'In-Data\Fatty Acids_Free'
+  # $inPath = Split-Path -Parent $systemPath | Join-Path -ChildPath 'In-Data\Fatty Acids_Free'
+  # $inPath = Split-Path -Parent $systemPath | Join-Path -ChildPath 'ProstateCancer'
+  $inPath = 'z:\UBUNTU\02 - Проекты в работе\32 - Воспроизводимость после хранения\Павел Prostate Cancer\All'
 }
 
-# $normPath = Split-Path -Parent $systemPath | Join-Path -ChildPath "Normal concentrations.xlsx" 
+$normPath = Split-Path -Parent $systemPath | Join-Path -ChildPath "Normal concentrations.xlsx" 
 # $normPath = Split-Path -Parent $systemPath | Join-Path -ChildPath "Amino acids Normal concentrations.xlsx" 
 # $normPath = Split-Path -Parent $systemPath | Join-Path -ChildPath "Fatty acids All Normal concentrations.xlsx" 
-$normPath = Split-Path -Parent $systemPath | Join-Path -ChildPath "Fatty acids Free Normal concerntrations.xlsx" 
+# $normPath = Split-Path -Parent $systemPath | Join-Path -ChildPath "Fatty acids Free Normal concerntrations.xlsx" 
 
 #-------------------------------------------------------------------------------
 # загрузка нормальных диапазонов
