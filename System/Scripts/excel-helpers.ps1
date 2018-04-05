@@ -6,6 +6,7 @@
     };
 '@
 
+. .\common-stat.ps1
 ################################################################### From excel-common.ps1
 # формирование заголовка таблицы
 function Add-TableTitle ($sheet, $rowNumber, $colNumber, $titles) {
@@ -30,6 +31,29 @@ function Set-NumFormatColumns2 ($sheet, $colNumber, $formats) {
   }
 }
 
+# вывод строки данных в первый столбец $title
+function Export-ExcelRow ($sheet, $rn, $cn, $title, $values) {
+  $sheet.Row($rn).Style.HorizontalAlignment = "Center"
+  $sheet.Cells[$rn, 1].Value = $title
+
+  $values | ForEach-Object {
+      if ($_ -is [string]) {
+          $sheet.Cells[$rn, $cn].Value = $_
+      } 
+      else {
+          $roundCount = $sheet.Cells[$rn, $cn].Style.Numberformat.Format.Split(".")[1].Length
+          $sheet.Cells[$rn, $cn].Value = [math]::Round($_, $roundCount)
+      }
+      $cn++
+  }
+}
+function Export-BoldExcelRow ($sheet, $rn, $cn, $title, $format, $values) {
+  if ($format) {
+      $sheet.Row($rn).Style.Numberformat.Format = $format
+  }
+  $sheet.Row($rn).Style.Font.Bold = $true
+  Export-ExcelRow $sheet $rn $cn $title $values
+}
 
 #########################################################################################
 
@@ -239,21 +263,37 @@ function Export-ExcelSummary () {
     $rowNumber = $sheet.Dimension.End.Row + 1
   }
 
+  $samples  = @()
+  $titles | ForEach-Object {
+    $selSample = $outData | Select-Object -ExpandProperty dataValues | Where-Object Peak_Name -EQ $_
+    $sample = $selSample | Select-Object -Property @{name="Amount";expression={[System.Double]$_.Amount}} | Select-Object -ExpandProperty Amount
+    $samples += [PSCustomObject]@{
+      name = $_
+      values = $sample
+    }
+  }
+
+  $stats = Get-CommonStats -samples $samples
+
   foreach ($item in $outData) {
     $colNumber = 1
     $sheet.Cells[$rowNumber, $colNumber++].Value = $Diagnose
     $sheet.Cells[$rowNumber, $colNumber++].Value = $item.name
     $titles | ForEach-Object {
       $amount = $item.dataValues | Where-Object Peak_Name -EQ $_ | Select-Object -ExpandProperty Amount
-      # $sheet.Cells[$rowNumber, $colNumber].Style.Numberformat.Format = "#0.00"
-      $sheet.Cells[$rowNumber, $colNumber++].Value = $amount
+      if ($amount.GetType().Name -eq "String") {
+        $sheet.Cells[$rowNumber, $colNumber++].Value = [System.Double]$amount
+      } else {
+        Write-Warning ("Дубликат имени " + $_)
+        $sheet.Cells[$rowNumber, $colNumber++].Value = "?????"
+      }
     }
 
-    # $sheet.Row($rowNumber).Style.Numberformat.Format = "#0.00000"
+    $sheet.Row($rowNumber).Style.Numberformat.Format = "#0.00000"
     $rowNumber++
   }
 
-  $rowNumber = Export-ExcelCommonStats $sheet $rowNumber 2 "#0.00" $tableData.stats
+  $rowNumber = Export-ExcelCommonStats $sheet $rowNumber 3 "#0.000" $stats
 
   $allCells = $sheet.Cells[1, 1, $sheet.Dimension.End.Row, $sheet.Dimension.End.Column]
   $allCells.AutoFitColumns()

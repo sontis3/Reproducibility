@@ -15,6 +15,7 @@ if (!$inPath) {
     # $inPath = Split-Path -Parent $systemPath | Join-Path -ChildPath 'In-Data\Fatty Acids_Free'
     # $inPath = Split-Path -Parent $systemPath | Join-Path -ChildPath 'ProstateCancer'
     $inPath = 'z:\UBUNTU\02 - Проекты в работе\32 - Воспроизводимость после хранения\Павел Prostate Cancer\PH-PC Serum'
+    # $inPath = 'z:\UBUNTU\02 - Проекты в работе\32 - Воспроизводимость после хранения\Павел Prostate Cancer\PH-PC Urine'
 }
 
 #-------------------------------------------------------------------------------
