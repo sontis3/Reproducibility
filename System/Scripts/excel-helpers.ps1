@@ -192,3 +192,29 @@ function Export-ExcelData() {
   $excel.Save()
   $excel.Dispose()
 }
+
+# формирование сводного отчета
+function Export-ExcelSummary () {
+  [CmdletBinding()]
+  Param(
+      [Parameter(Mandatory = $True)] [string]$Path,             # путь файла
+      [Parameter(Mandatory = $True)] [string]$Diagnose,         # диагноз (1-я колонкаs)
+      [Parameter(Mandatory = $False)] [System.Object]$outData   # данные, экспортитруемые в Excel
+  )
+
+  $excel = New-Object OfficeOpenXml.ExcelPackage -ArgumentList $Path
+  $wBook = $excel.Workbook
+  $wSheets = $wBook.Worksheets
+  if (!$wSheets.Item("Сводная")) {
+      $sheet = $wSheets.Add("Сводная")
+
+      $titles = $outData[0].inData | Select-Object -ExpandProperty Peak_Name
+      $rowNumber = $sheet.Dimension.End.Row + 1
+      Add-TableTitle $sheet $rowNumber 1 (@("Диагноз") + $titles)
+      $rowNumber++
+  }
+
+  $excel.Save()
+  $excel.Dispose()
+}
+

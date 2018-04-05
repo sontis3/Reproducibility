@@ -24,58 +24,33 @@ if (!$inPath) {
 . ".\xml-helpers.ps1"
 
 #-----------------------------------------------------------------------------------------------
-
+# загрузить исходные данные
 function Get-XmlDataMult() {
     [CmdletBinding()]
     Param(
-        [Parameter(Mandatory = $True)] [string]$Path, # каталог с исходными файлами
-        [Parameter(Mandatory = $True)] [string]$tmpPath, # каталог временных(результат) файлов
-        [Parameter(Mandatory = $True)] [string]$Format, # формат данных
-        [Parameter(Mandatory = $True)] [System.Object[]]$fields, # представление данных in/out
-        [Parameter(Mandatory = $True)] [string]$filterTemplate              # шаблон фильтра
+        [Parameter(Mandatory = $True)] [string]$Path,               # каталог с исходными файлами
+        [Parameter(Mandatory = $True)] [string]$Format,             # формат данных
+        [Parameter(Mandatory = $True)] [System.Object[]]$fields,    # представление данных in/out
+        [Parameter(Mandatory = $True)] [string]$filterTemplate      # шаблон фильтра
     )
   
     Write-Host '-------------- start job (Load from multiple xml to stage)---------------'
-    # удаление старых файлов
-    $tmpFilePath = Join-Path -Path $tmpPath -ChildPath '*.*'
-    if (Test-Path $tmpFilePath) {
-        Remove-Item $tmpFilePath
-    }
-
     $tableData = @()
 
     Get-ChildItem -Path $Path -Filter $filterTemplate | Sort-Object -Property Name |
         ForEach-Object {
         Write-Host '-------------- ' + $_.Name + ' ---------------'
-        # switch -regex ($_.Name) {
-        #     $BioFluidNames[0] { $selFluidName = $BioFluidNames[0] }
-        #     $BioFluidNames[1] { $selFluidName = $BioFluidNames[1] }
-        #     $BioFluidNames[2] { $selFluidName = $BioFluidNames[2] }
-        #     Default {
-        #         Write-Warning ("Не найден код жидкости для " + $_.Name)
-        #         $selFluidName = $null
-        #     }
-        # }
-  
-        # if ($selFluidName -and $ranges.$selFluidName) {
-            $inData = Get-XmlData -FilePath $_.FullName -Format $Format -Filter " " -fields ($fields  | Select-Object -ExpandProperty "in")
-  
-        #     $outData = Process-Data -fluidName $selFluidName -ranges $ranges.$selFluidName -stopList $stopList -indata $inData
-  
-            $baseName = $_ | Select-Object -ExpandProperty BaseName
-        #     $fileName = $baseName + ".xlsx"
-        #     $ExcelPath = Join-Path -Path $tmpPath -ChildPath $fileName
-            $dataInfo = $baseName.Split("_")
+        $inData = Get-XmlData -FilePath $_.FullName -Format $Format -Filter " " -fields ($fields  | Select-Object -ExpandProperty "in")
 
-            $item = [PSCustomObject]@{
-                name = $dataInfo[1];
-                inData = $inData;
-            }
+        $baseName = $_ | Select-Object -ExpandProperty BaseName
+        $dataInfo = $baseName.Split("_")
 
-            $tableData += $item
+        $item = [PSCustomObject]@{
+            name = $dataInfo[1];
+            inData = $inData;
+        }
 
-        #     Export-ExcelData -Path $ExcelPath -dataInfo $dataInfo -outData $outData
-        # }
+        $tableData += $item
     }
   
     Write-Host '-------------- end job (Load from multiple xml to stage)---------------'
@@ -83,12 +58,21 @@ function Get-XmlDataMult() {
     $tableData
 }
   
-
 $fields = @(
     [PSCustomObject]@{in = "Number"; out = "Number"; },
     [PSCustomObject]@{in = "Peak_Name"; out = "Name"; },
     [PSCustomObject]@{in = "Amount"; out = "Amount"; }
 )
 
-$phData = Get-XmlDataMult -Path $inPath -tmpPath $tmpPath -Format "AlexPasha" -fields $fields -filterTemplate "*_PH*.xml"
-$pcData = Get-XmlDataMult -Path $inPath -tmpPath $tmpPath -Format "AlexPasha" -fields $fields -filterTemplate "*_PC*.xml"
+$phData = Get-XmlDataMult -Path $inPath -Format "AlexPasha" -fields $fields -filterTemplate "*_PH*.xml"
+$pcData = Get-XmlDataMult -Path $inPath -Format "AlexPasha" -fields $fields -filterTemplate "*_PC*.xml"
+
+# удаление старых файлов
+$tmpFilePath = Join-Path -Path $tmpPath -ChildPath '*.*'
+if (Test-Path $tmpFilePath) {
+    Remove-Item $tmpFilePath
+}
+$ExcelPath = Join-Path -Path $tmpPath -ChildPath "summary.xlsx"
+
+Export-ExcelSummary -Path $ExcelPath -Diagnose "PH" -outData $phData
+Export-ExcelSummary -Path $ExcelPath -Diagnose "PC" -outData $pcData
