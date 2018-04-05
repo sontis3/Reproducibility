@@ -47,7 +47,7 @@ function Get-XmlDataMult() {
 
         $item = [PSCustomObject]@{
             name = $dataInfo[1];
-            inData = $inData;
+            dataValues = $inData;
         }
 
         $tableData += $item

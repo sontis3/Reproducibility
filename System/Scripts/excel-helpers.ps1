@@ -193,6 +193,28 @@ function Export-ExcelData() {
   $excel.Dispose()
 }
 
+# вывод общих статистических данных
+function Export-ExcelCommonStats ($sheet, $rn, $cn, $format, $stats) {
+  Export-BoldExcelRow $sheet $rn $cn "Mean" $format $stats.means.value
+  $rn++
+  Export-BoldExcelRow $sheet $rn $cn "Gmean" $format $stats.gmeans.value
+  $rn++
+  Export-BoldExcelRow $sheet $rn $cn "Медиана" $format $stats.median.value
+  $rn++
+  Export-BoldExcelRow $sheet $rn $cn "Минимум" $format $stats.minimum.value
+  $rn++
+  Export-BoldExcelRow $sheet $rn $cn "Максимум" $format $stats.maximum.value
+  $rn++
+  Export-BoldExcelRow $sheet $rn $cn "SD" $format $stats.SD.value
+  $rn++
+  Export-BoldExcelRow $sheet $rn $cn "CV" $format $stats.RSD.value
+  $sheet.Row($rn).Style.Font.Color.SetColor("Red")
+  $sheet.Row($rn).Style.Border.Bottom.Style = "Thin"
+  $rn++
+
+  $rn
+}
+
 # формирование сводного отчета
 function Export-ExcelSummary () {
   [CmdletBinding()]
@@ -208,11 +230,33 @@ function Export-ExcelSummary () {
   if (!$wSheets.Item("Сводная")) {
       $sheet = $wSheets.Add("Сводная")
 
-      $titles = $outData[0].inData | Select-Object -ExpandProperty Peak_Name
+      $titles = $outData[0].dataValues | Select-Object -ExpandProperty Peak_Name
       $rowNumber = $sheet.Dimension.End.Row + 1
-      Add-TableTitle $sheet $rowNumber 1 (@("Диагноз") + $titles)
+      Add-TableTitle $sheet $rowNumber 1 (@("Диагноз", "Имя") + $titles)
       $rowNumber++
+  } else {
+    $sheet = $wSheets["Сводная"]
+    $rowNumber = $sheet.Dimension.End.Row + 1
   }
+
+  foreach ($item in $outData) {
+    $colNumber = 1
+    $sheet.Cells[$rowNumber, $colNumber++].Value = $Diagnose
+    $sheet.Cells[$rowNumber, $colNumber++].Value = $item.name
+    $titles | ForEach-Object {
+      $amount = $item.dataValues | Where-Object Peak_Name -EQ $_ | Select-Object -ExpandProperty Amount
+      # $sheet.Cells[$rowNumber, $colNumber].Style.Numberformat.Format = "#0.00"
+      $sheet.Cells[$rowNumber, $colNumber++].Value = $amount
+    }
+
+    # $sheet.Row($rowNumber).Style.Numberformat.Format = "#0.00000"
+    $rowNumber++
+  }
+
+  $rowNumber = Export-ExcelCommonStats $sheet $rowNumber 2 "#0.00" $tableData.stats
+
+  $allCells = $sheet.Cells[1, 1, $sheet.Dimension.End.Row, $sheet.Dimension.End.Column]
+  $allCells.AutoFitColumns()
 
   $excel.Save()
   $excel.Dispose()
