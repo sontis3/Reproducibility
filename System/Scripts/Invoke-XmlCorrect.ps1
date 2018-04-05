@@ -1,4 +1,4 @@
-[CmdletBinding()]
+﻿[CmdletBinding()]
 Param(
     [Parameter(Mandatory=$False)] [string]$inPath,
     [Parameter(Mandatory=$False)] [string]$outPath
@@ -9,7 +9,8 @@ $ErrorActionPreference = "Stop"
 $scriptPath = Split-Path $MyInvocation.MyCommand.path
 if (!$inPath) {
     $systemPath = Split-Path -Parent $scriptPath
-    $inPath = Split-Path -Parent $systemPath | Join-Path -ChildPath 'In-Data\All' 
+    # $inPath = Split-Path -Parent $systemPath | Join-Path -ChildPath 'In-Data\All' 
+    $inPath = 'z:\UBUNTU\02 - Проекты в работе\32 - Воспроизводимость после хранения\Павел Prostate Cancer\All'
     $outPath = Split-Path -Parent $systemPath | Join-Path -ChildPath 'In-Data\Amino Acids' 
 }
 
