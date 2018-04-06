@@ -245,16 +245,18 @@ function Export-ExcelSummary () {
   Param(
       [Parameter(Mandatory = $True)] [string]$Path,             # путь файла
       [Parameter(Mandatory = $True)] [string]$Diagnose,         # диагноз (1-я колонкаs)
-      [Parameter(Mandatory = $False)] [System.Object]$outData   # данные, экспортитруемые в Excel
+      [Parameter(Mandatory = $True)] [System.Object]$outData,   # данные, экспортитруемые в Excel
+      [Parameter(Mandatory = $True)] [System.Object]$stats      # общая статистика
   )
 
   $excel = New-Object OfficeOpenXml.ExcelPackage -ArgumentList $Path
   $wBook = $excel.Workbook
   $wSheets = $wBook.Worksheets
+
+  $titles = $outData[0].dataValues | Select-Object -ExpandProperty Peak_Name
   if (!$wSheets.Item("Сводная")) {
       $sheet = $wSheets.Add("Сводная")
 
-      $titles = $outData[0].dataValues | Select-Object -ExpandProperty Peak_Name
       $rowNumber = $sheet.Dimension.End.Row + 1
       Add-TableTitle $sheet $rowNumber 1 (@("Диагноз", "Имя") + $titles)
       $rowNumber++
@@ -262,18 +264,6 @@ function Export-ExcelSummary () {
     $sheet = $wSheets["Сводная"]
     $rowNumber = $sheet.Dimension.End.Row + 1
   }
-
-  $samples  = @()
-  $titles | ForEach-Object {
-    $selSample = $outData | Select-Object -ExpandProperty dataValues | Where-Object Peak_Name -EQ $_
-    $sample = $selSample | Select-Object -Property @{name="Amount";expression={[System.Double]$_.Amount}} | Select-Object -ExpandProperty Amount
-    $samples += [PSCustomObject]@{
-      name = $_
-      values = $sample
-    }
-  }
-
-  $stats = Get-CommonStats -samples $samples
 
   foreach ($item in $outData) {
     $colNumber = 1
@@ -294,6 +284,85 @@ function Export-ExcelSummary () {
   }
 
   $rowNumber = Export-ExcelCommonStats $sheet $rowNumber 3 "#0.000" $stats
+
+  $allCells = $sheet.Cells[1, 1, $sheet.Dimension.End.Row, $sheet.Dimension.End.Column]
+  $allCells.AutoFitColumns()
+
+  $excel.Save()
+  $excel.Dispose()
+}
+
+# формирование отчета T-test
+function Export-T () {
+  [CmdletBinding()]
+  Param(
+      [Parameter(Mandatory = $True)] [string]$Path,             # путь файла
+      [Parameter(Mandatory = $True)] [System.Object]$t          # T-test
+  )
+
+  $excel = New-Object OfficeOpenXml.ExcelPackage -ArgumentList $Path
+  $wBook = $excel.Workbook
+  $wSheets = $wBook.Worksheets
+  if (!$wSheets.Item("Сводная")) {
+      $sheet = $wSheets.Add("Сводная")
+  } else {
+    $sheet = $wSheets["Сводная"]
+  }
+  $rowNumber = $sheet.Dimension.End.Row + 1
+
+  $colNumber = 1
+  $sheet.Cells[$rowNumber, $colNumber].Value = "t-value"
+  $colNumber = 3
+  foreach ($item in $t) {
+    $sheet.Cells[$rowNumber, $colNumber++].Value = $item.tValue
+  }
+  $sheet.Row($rowNumber).Style.Numberformat.Format = "#0.00000"
+  $rowNumber++
+
+  $colNumber = 1
+  $sheet.Cells[$rowNumber, $colNumber].Value = "df"
+  $colNumber = 3
+  foreach ($item in $t) {
+    $sheet.Cells[$rowNumber, $colNumber++].Value = $item.dF
+  }
+  $sheet.Row($rowNumber).Style.Numberformat.Format = "#0"
+  $rowNumber++
+
+  $colNumber = 1
+  $sheet.Cells[$rowNumber, $colNumber].Value = "p"
+  $colNumber = 3
+  foreach ($item in $t) {
+    if ($item.p -lt 0.05) {
+      $sheet.Cells[$rowNumber, $colNumber].Style.Fill.PatternType = [OfficeOpenXml.Style.ExcelFillStyle]::Solid
+      $sheet.Cells[$rowNumber, $colNumber].Style.Fill.BackgroundColor.SetColor([System.Drawing.Color]::LightPink)
+      # $sheet.Cells[$rowNumber, $colNumber].Style.Font.Color.SetColor("Red")
+    }
+    $sheet.Cells[$rowNumber, $colNumber++].Value = $item.p
+  }
+  $sheet.Row($rowNumber).Style.Numberformat.Format = "#0.00000"
+  $rowNumber++
+
+  $colNumber = 1
+  $sheet.Cells[$rowNumber, $colNumber].Value = "F-ratio"
+  $colNumber = 3
+  foreach ($item in $t) {
+    $sheet.Cells[$rowNumber, $colNumber++].Value = $item.fva
+  }
+  $sheet.Row($rowNumber).Style.Numberformat.Format = "#0.00000"
+  $rowNumber++
+
+  $colNumber = 1
+  $sheet.Cells[$rowNumber, $colNumber].Value = "p variances"
+  $colNumber = 3
+  foreach ($item in $t) {
+    if ($item.pVar -lt 0.05) {
+      $sheet.Cells[$rowNumber, $colNumber].Style.Fill.PatternType = [OfficeOpenXml.Style.ExcelFillStyle]::Solid
+      $sheet.Cells[$rowNumber, $colNumber].Style.Fill.BackgroundColor.SetColor([System.Drawing.Color]::LightPink)
+    }
+    $sheet.Cells[$rowNumber, $colNumber++].Value = $item.pVar
+  }
+  $sheet.Row($rowNumber).Style.Numberformat.Format = "#0.00000"
+  $rowNumber++
 
   $allCells = $sheet.Cells[1, 1, $sheet.Dimension.End.Row, $sheet.Dimension.End.Column]
   $allCells.AutoFitColumns()

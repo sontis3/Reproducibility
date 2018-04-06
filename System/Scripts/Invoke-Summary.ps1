@@ -59,6 +59,27 @@ function Get-XmlDataMult() {
     $tableData
 }
   
+function Prepare-Stats () {
+    [CmdletBinding()]
+    Param(
+        [Parameter(Mandatory = $True)] [System.Object]$outData      # данные, экспортитруемые в Excel
+    )
+  
+    $titles = $outData[0].dataValues | Select-Object -ExpandProperty Peak_Name
+    $samples  = @()
+    $titles | ForEach-Object {
+      $selSample = $outData | Select-Object -ExpandProperty dataValues | Where-Object Peak_Name -EQ $_
+      $sample = $selSample | Select-Object -Property @{name="Amount";expression={[System.Double]$_.Amount}} | Select-Object -ExpandProperty Amount
+      $samples += [PSCustomObject]@{
+        name = $_
+        values = $sample
+      }
+    }
+  
+    Get-CommonStats -samples $samples
+}
+
+
 $fields = @(
     [PSCustomObject]@{in = "Number"; out = "Number"; },
     [PSCustomObject]@{in = "Peak_Name"; out = "Name"; },
@@ -75,5 +96,16 @@ if (Test-Path $tmpFilePath) {
 }
 $ExcelPath = Join-Path -Path $tmpPath -ChildPath "summary.xlsx"
 
-Export-ExcelSummary -Path $ExcelPath -Diagnose "PH" -outData $phData
-Export-ExcelSummary -Path $ExcelPath -Diagnose "PC" -outData $pcData
+$phStats = Prepare-Stats -outData $phData
+$pcStats = Prepare-Stats -outData $pcData
+
+Export-ExcelSummary -Path $ExcelPath -Diagnose "PH" -outData $phData -stats $phStats
+Export-ExcelSummary -Path $ExcelPath -Diagnose "PC" -outData $pcData -stats $pcStats
+
+$t = @()
+for ($i = 0; $i -lt $phStats.means.Count; $i++) {
+    $t += Get-T -nT $phData.Count -meanT $phStats.means[$i].value -sdT $phStats.SD[$i].value -nR $pcData.Count -meanR $pcStats.means[$i].value -sdR $pcStats.SD[$i].value
+}
+
+Export-T -Path $ExcelPath -t $t
+$a = 1
