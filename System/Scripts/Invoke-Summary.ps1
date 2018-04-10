@@ -14,8 +14,8 @@ if (!$inPath) {
     # $inPath = Split-Path -Parent $systemPath | Join-Path -ChildPath 'In-Data\Fatty Acids_All'
     # $inPath = Split-Path -Parent $systemPath | Join-Path -ChildPath 'In-Data\Fatty Acids_Free'
     # $inPath = Split-Path -Parent $systemPath | Join-Path -ChildPath 'ProstateCancer'
-    $inPath = 'z:\UBUNTU\02 - Проекты в работе\32 - Воспроизводимость после хранения\Павел Prostate Cancer\PH-PC Serum'
-    # $inPath = 'z:\UBUNTU\02 - Проекты в работе\32 - Воспроизводимость после хранения\Павел Prostate Cancer\PH-PC Urine'
+    # $inPath = 'z:\UBUNTU\02 - Проекты в работе\32 - Воспроизводимость после хранения\Павел Prostate Cancer\PH-PC Serum'
+    $inPath = 'z:\UBUNTU\02 - Проекты в работе\32 - Воспроизводимость после хранения\Павел Prostate Cancer\PH-PC Urine'
 }
 
 #-------------------------------------------------------------------------------
@@ -41,6 +41,17 @@ function Get-XmlDataMult() {
     Get-ChildItem -Path $Path -Filter $filterTemplate | Sort-Object -Property Name |
         ForEach-Object {
         Write-Host '-------------- ' + $_.Name + ' ---------------'
+        switch -regex ($_.Name) {
+            $BioFluidNames[0] { $selFluidName = $BioFluidNames[0] }
+            $BioFluidNames[1] { $selFluidName = $BioFluidNames[1] }
+            $BioFluidNames[2] { $selFluidName = $BioFluidNames[2] }
+            Default {
+              Write-Warning ("Не найден код жидкости для " + $_.Name)
+              $selFluidName = $null
+            }
+          }
+
+
         $inData = Get-XmlData -FilePath $_.FullName -Format $Format -Filter " " -fields ($fields  | Select-Object -ExpandProperty "in")
 
         $baseName = $_ | Select-Object -ExpandProperty BaseName
@@ -49,6 +60,7 @@ function Get-XmlDataMult() {
         $item = [PSCustomObject]@{
             name = $dataInfo[1];
             dataValues = $inData;
+            selFluidName = $selFluidName;
         }
 
         $tableData += $item
@@ -62,13 +74,27 @@ function Get-XmlDataMult() {
 function Prepare-Stats () {
     [CmdletBinding()]
     Param(
-        [Parameter(Mandatory = $True)] [System.Object]$outData      # данные, экспортитруемые в Excel
+        [Parameter(Mandatory = $True)] [System.Object]$data      # данные, экспортитруемые в Excel
     )
-  
-    $titles = $outData[0].dataValues | Select-Object -ExpandProperty Peak_Name
+
+    $urineFactor = "Creatinine"
+    $data | ForEach-Object {
+        if ($_.SelFluidName -eq "Urine") {
+            $dataValues = $_.dataValues
+            $item = $dataValues.Where({$_.Peak_Name -eq $urineFactor})
+            if ($item) {
+              $urineFactorValue = [Double]$item.Amount
+            }
+            $dataValues | ForEach-Object {
+                $_.Amount /= $urineFactorValue
+            }
+        }
+    }
+
+    $titles = $data[0].dataValues | Select-Object -ExpandProperty Peak_Name
     $samples  = @()
     $titles | ForEach-Object {
-      $selSample = $outData | Select-Object -ExpandProperty dataValues | Where-Object Peak_Name -EQ $_
+      $selSample = $data | Select-Object -ExpandProperty dataValues | Where-Object Peak_Name -EQ $_
       $sample = $selSample | Select-Object -Property @{name="Amount";expression={[System.Double]$_.Amount}} | Select-Object -ExpandProperty Amount
       $samples += [PSCustomObject]@{
         name = $_
@@ -78,7 +104,7 @@ function Prepare-Stats () {
   
     Get-CommonStats -samples $samples
 }
-
+########################################################################################
 
 $fields = @(
     [PSCustomObject]@{in = "Number"; out = "Number"; },
@@ -96,8 +122,8 @@ if (Test-Path $tmpFilePath) {
 }
 $ExcelPath = Join-Path -Path $tmpPath -ChildPath "summary.xlsx"
 
-$phStats = Prepare-Stats -outData $phData
-$pcStats = Prepare-Stats -outData $pcData
+$phStats = Prepare-Stats -data $phData
+$pcStats = Prepare-Stats -data $pcData
 
 Export-ExcelSummary -Path $ExcelPath -Diagnose "PH" -outData $phData -stats $phStats
 Export-ExcelSummary -Path $ExcelPath -Diagnose "PC" -outData $pcData -stats $pcStats

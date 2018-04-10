@@ -271,7 +271,7 @@ function Export-ExcelSummary () {
     $sheet.Cells[$rowNumber, $colNumber++].Value = $item.name
     $titles | ForEach-Object {
       $amount = $item.dataValues | Where-Object Peak_Name -EQ $_ | Select-Object -ExpandProperty Amount
-      if ($amount.GetType().Name -eq "String") {
+      if ($amount.GetType().Name -eq "String" -or $amount.GetType().Name -eq "Double") {
         $sheet.Cells[$rowNumber, $colNumber++].Value = [System.Double]$amount
       } else {
         Write-Warning ("Дубликат имени " + $_)
