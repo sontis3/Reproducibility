@@ -6,19 +6,18 @@ Param(
 if (!$inPath) {
   $scriptPath = Split-Path $MyInvocation.MyCommand.path
   $systemPath = Split-Path -Parent $scriptPath
-  # $inPath = Split-Path -Parent $systemPath | Join-Path -ChildPath 'In-Data\All'
-  # $inPath = Split-Path -Parent $systemPath | Join-Path -ChildPath 'In-Data\Amino Acids'
-  # $inPath = Split-Path -Parent $systemPath | Join-Path -ChildPath 'In-Data\Fatty Acids_All'
-  # $inPath = Split-Path -Parent $systemPath | Join-Path -ChildPath 'In-Data\Fatty Acids_Free'
+  # $inPath = 'z:\UBUNTU\02 - Проекты в работе\32 - Воспроизводимость после хранения\Павел Prostate Cancer\All'
+  $inPath = 'z:\UBUNTU\02 - Проекты в работе\32 - Воспроизводимость после хранения\Павел Prostate Cancer\Amino Acids\Serum'
+  # $inPath = 'z:\UBUNTU\02 - Проекты в работе\32 - Воспроизводимость после хранения\Павел Prostate Cancer\Fatty Acids_All'
+  # $inPath = 'z:\UBUNTU\02 - Проекты в работе\32 - Воспроизводимость после хранения\Павел Prostate Cancer\Fatty Acids_Free'
   # $inPath = Split-Path -Parent $systemPath | Join-Path -ChildPath 'ProstateCancer'
-  $inPath = 'z:\UBUNTU\02 - Проекты в работе\32 - Воспроизводимость после хранения\Павел Prostate Cancer\All'
+  # $inPath = 'z:\UBUNTU\02 - Проекты в работе\32 - Воспроизводимость после хранения\Павел Prostate Cancer\All'
 }
 
-$normPath = 'z:\UBUNTU\02 - Проекты в работе\32 - Воспроизводимость после хранения\Normal concentrations.xlsx'
-# $normPath = Split-Path -Parent $systemPath | Join-Path -ChildPath "Normal concentrations.xlsx"
-# $normPath = Split-Path -Parent $systemPath | Join-Path -ChildPath "Amino acids Normal concentrations.xlsx" 
-# $normPath = Split-Path -Parent $systemPath | Join-Path -ChildPath "Fatty acids All Normal concentrations.xlsx" 
-# $normPath = Split-Path -Parent $systemPath | Join-Path -ChildPath "Fatty acids Free Normal concerntrations.xlsx" 
+# $normPath = 'z:\UBUNTU\02 - Проекты в работе\32 - Воспроизводимость после хранения\Normal concentrations.xlsx'
+$normPath = 'z:\UBUNTU\02 - Проекты в работе\32 - Воспроизводимость после хранения\Amino acids Normal concentrations.xlsx'
+# $normPath = 'z:\UBUNTU\02 - Проекты в работе\32 - Воспроизводимость после хранения\Fatty acids All Normal concentrations.xlsx' 
+# $normPath = 'z:\UBUNTU\02 - Проекты в работе\32 - Воспроизводимость после хранения\Fatty acids Free Normal concerntrations.xlsx' 
 
 #-------------------------------------------------------------------------------
 # загрузка нормальных диапазонов

@@ -15,7 +15,10 @@ if (!$inPath) {
     # $inPath = Split-Path -Parent $systemPath | Join-Path -ChildPath 'In-Data\Fatty Acids_Free'
     # $inPath = Split-Path -Parent $systemPath | Join-Path -ChildPath 'ProstateCancer'
     # $inPath = 'z:\UBUNTU\02 - Проекты в работе\32 - Воспроизводимость после хранения\Павел Prostate Cancer\PH-PC Serum'
-    $inPath = 'z:\UBUNTU\02 - Проекты в работе\32 - Воспроизводимость после хранения\Павел Prostate Cancer\PH-PC Urine'
+    # $inPath = 'z:\UBUNTU\02 - Проекты в работе\32 - Воспроизводимость после хранения\Павел Prostate Cancer\PH-PC Urine'
+    # $inPath = 'Z:\UBUNTU\02 - Проекты в работе\32 - Воспроизводимость после хранения\Павел Prostate Cancer\QC\Serum'
+    # $inPath = 'Z:\UBUNTU\02 - Проекты в работе\32 - Воспроизводимость после хранения\Павел Prostate Cancer\QC\Urine'
+    $inPath = 'Z:\UBUNTU\02 - Проекты в работе\32 - Воспроизводимость после хранения\Павел Prostate Cancer\PH-PC Serum AA'
 }
 
 #-------------------------------------------------------------------------------
@@ -112,15 +115,15 @@ $fields = @(
     [PSCustomObject]@{in = "Amount"; out = "Amount"; }
 )
 
-$phData = Get-XmlDataMult -Path $inPath -Format "AlexPasha" -fields $fields -filterTemplate "*_PH*.xml"
-$pcData = Get-XmlDataMult -Path $inPath -Format "AlexPasha" -fields $fields -filterTemplate "*_PC*.xml"
-
 # удаление старых файлов
 $tmpFilePath = Join-Path -Path $tmpPath -ChildPath '*.*'
 if (Test-Path $tmpFilePath) {
     Remove-Item $tmpFilePath
 }
 $ExcelPath = Join-Path -Path $tmpPath -ChildPath "summary.xlsx"
+
+$phData = Get-XmlDataMult -Path $inPath -Format "AlexPasha" -fields $fields -filterTemplate "*_PH*.xml"
+$pcData = Get-XmlDataMult -Path $inPath -Format "AlexPasha" -fields $fields -filterTemplate "*_PC*.xml"
 
 $phStats = Prepare-Stats -data $phData
 $pcStats = Prepare-Stats -data $pcData
@@ -134,4 +137,7 @@ for ($i = 0; $i -lt $phStats.means.Count; $i++) {
 }
 
 Export-T -Path $ExcelPath -t $t
-$a = 1
+
+# $qcData = Get-XmlDataMult -Path $inPath -Format "AlexPasha" -fields $fields -filterTemplate "*.xml"
+# $qcStats = Prepare-Stats -data $qcData
+# Export-ExcelSummary -Path $ExcelPath -Diagnose "QC" -outData $qcData -stats $qcStats
