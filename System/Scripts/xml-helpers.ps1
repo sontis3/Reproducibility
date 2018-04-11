@@ -95,8 +95,8 @@ function Correct-XmlDataMult () {
             Write-Host "-------------- $outFilePath ---------------"
             $baseName = $_ | Select-Object -ExpandProperty BaseName
             $dataInfo = $baseName.Split("_")
-            $identNamePart = $dataInfo[1..$dataInfo.Count] -join "_"
-            Get-ChildItem -Path $inPath -Filter "Urine*$identNamePart.xml" |
+            $identNamePart = $dataInfo[1..($dataInfo.Count-2)] -join "_"
+            Get-ChildItem -Path $inPath -Filter "Urine*$identNamePart*.xml" |
                 ForEach-Object {
                     $inFilePath = $_.FullName
                 }

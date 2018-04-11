@@ -7,7 +7,7 @@ if (!$inPath) {
   $scriptPath = Split-Path $MyInvocation.MyCommand.path
   $systemPath = Split-Path -Parent $scriptPath
   # $inPath = 'z:\UBUNTU\02 - Проекты в работе\32 - Воспроизводимость после хранения\Павел Prostate Cancer\All'
-  $inPath = 'z:\UBUNTU\02 - Проекты в работе\32 - Воспроизводимость после хранения\Павел Prostate Cancer\Amino Acids\Serum'
+  $inPath = 'z:\UBUNTU\02 - Проекты в работе\32 - Воспроизводимость после хранения\Павел Prostate Cancer\Amino Acids\Urine'
   # $inPath = 'z:\UBUNTU\02 - Проекты в работе\32 - Воспроизводимость после хранения\Павел Prostate Cancer\Fatty Acids_All'
   # $inPath = 'z:\UBUNTU\02 - Проекты в работе\32 - Воспроизводимость после хранения\Павел Prostate Cancer\Fatty Acids_Free'
   # $inPath = Split-Path -Parent $systemPath | Join-Path -ChildPath 'ProstateCancer'
